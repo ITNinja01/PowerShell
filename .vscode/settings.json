@@ -1,0 +1,35 @@
+{
+    "workbench.colorCustomizations": {
+        "terminal.background":"#000000",
+"terminal.foreground":"#2cce62",
+"terminalCursor.background":"#BDBDBD",
+"terminalCursor.foreground":"#BDBDBD",
+"terminal.ansiBlack":"#222222",
+"terminal.ansiBlue":"#80DEEA",
+"terminal.ansiBrightBlack":"#757575",
+"terminal.ansiBrightBlue":"#80DEEA",
+"terminal.ansiBrightCyan":"#4DD0E1",
+"terminal.ansiBrightGreen":"#26C6DA",
+"terminal.ansiBrightMagenta":"#B3EBF2",
+"terminal.ansiBrightRed":"#0097A7",
+"terminal.ansiBrightWhite":"#EEEEEE",
+"terminal.ansiBrightYellow":"#00BCD4",
+"terminal.ansiCyan":"#4DD0E1",
+"terminal.ansiGreen":"#26C6DA",
+"terminal.ansiMagenta":"#B3EBF2",
+"terminal.ansiRed":"#0097A7",
+"terminal.ansiWhite":"#BDBDBD",
+"terminal.ansiYellow":"#00BCD4"
+    },
+    "terminal.integrated.fontSize": 16,
+    "editor.fontSize": 16,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "powershell"
+    ]
+}
