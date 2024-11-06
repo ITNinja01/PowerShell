@@ -1,8 +1,8 @@
 <#
 .SYNOPSIS
-This script will show the weather forcast for the next week and next 8 hours based off your public IP.
+This script will show the weather forecast for the next week and next 8 hours based off your public IP.
 .DESCRIPTION
-This script uses the public IP informatiom from Ipinfo.io to feed the longitude and latitude to the Weather.Gov API which than receives the forcast.
+This script uses the public IP informatiom from Ipinfo.io to feed the longitude and latitude to the Weather.Gov API which than receives the forecast.
 .COMPONENT
 Ipinfo.io, Weather.Gov API, PowerShell
 #>
