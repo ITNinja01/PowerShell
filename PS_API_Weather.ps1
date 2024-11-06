@@ -1,25 +1,25 @@
 <#
 .SYNOPSIS
-This script uses the API from weather.gov to display the forcast for Lansing, MI. 
-
-
-https://blog.ironmansoftware.com/daily-powershell/powershell-weather/
-
+This script will show the weather forcast for the next week and next 8 hours based off your public IP.
+.DESCRIPTION
+This script uses the public IP informatiom from Ipinfo.io to feed the longitude and latitude to the Weather.Gov API which than receives the forcast.
+.COMPONENT
+Ipinfo.io, Weather.Gov API, PowerShell
 #>
 
-# Make a request to an IP-based geolocation service
+# Making a request to a public IP informatiom service 
 $response = Invoke-RestMethod -Uri "http://ipinfo.io/json"
 
- # Extract city, country, latitude and longitude from the response
-$location = $response.loc -split ","
-$latitude = $location[0]
+#Extracts city, country, latitude and longitude from the response
+$location  = $response.loc -split ","
+$latitude  = $location[0]
 $longitude = $location[1]
-$City = $response.city
-$Country = $response.country
+$City      = $response.city
+$Country   = $response.country
 
 Write-Host "$City, $Country Forcast"
 
-Write-Host "The next 10 days:" 
+Write-Host "The next week:" 
 
 $API_Weather_URL = "https://api.weather.gov/points/$latitude,$longitude"
 
@@ -28,5 +28,4 @@ $Full_Weather = Invoke-RestMethod $API_Weather_URL
 
 Write-Host "The next 8 hours:"
 $Hourly_Weather = (Invoke-RestMethod ($Full_Weather.properties.forecastHourly)).Properties.periods | Select-Object startTime, endTime, temperature, probabilityOfPrecipitation 
-
-$Hourly_Weather[1..8]
+$Hourly_Weather[0..7]
