@@ -6,7 +6,7 @@ Using the region information from Ipinfo.io this script can be used for tavel be
 .COMPONENT
 Ipinfo.io, PowerShell
 .LINK
-https:   //taxfoundation.org/data/all/state/2024-sales-taxes/
+https://taxfoundation.org/data/all/state/2024-sales-taxes/
 .NOTES
 1.  This script would be more compact and auto-updating if a sales tax API where used instead of hard coding it in a hash table. I could not find an API for this purpose that was free to use.
 2.

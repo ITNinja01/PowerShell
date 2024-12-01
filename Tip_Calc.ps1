@@ -14,16 +14,16 @@ This script can do a tip % calc for a bill at a restaurant
 [Float]$Tip_amount += $Bill * $Tip_from_user
 
 #Rounds tip amount to two decimals
-$Tip_2_decomals = "{0:n2}" -f[Float]$Tip_amount
+$Tip_2_decimals = "{0:n2}" -f[Float]$Tip_amount
 
 # Add Bill and Tip with two decimals to find total amount
-[Float]$Total_amount += $Bill + $Tip_2_decomals
+[Float]$Total_amount += $Bill + $Tip_2_decimals
 
 #Uses Write-host to show tip and bill and tip together
 Clear-Host
 Write-Host "The original bill is $Bill"
-Write-Host "The tip amount is $ $Tip_2_decomals."
-Write-Host "The total for the bill and tip togther is $ $Total_amount." 
+Write-Host "The tip amount is $ $Tip_2_decimals."
+Write-Host "The total for the bill and tip together is $ $Total_amount." 
 
 #MUST nuke (null) vars. in memory for script to have correct numbers back if used more than once in same session.
 Clear-Variable -Name Bill,
@@ -31,4 +31,4 @@ Clear-Variable -Name Bill,
                       Tip_from_user,
                       Tip_amount,
                       Total_amount,
-                      Tip_2_decomals
+                      Tip_2_decimals

@@ -1,4 +1,4 @@
-><#
+<#
 .SYNOPSIS
 This script can convert celsius or fahrenheit to the other temperature scale.
 .DESCRIPTION 
