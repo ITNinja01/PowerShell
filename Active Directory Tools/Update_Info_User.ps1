@@ -12,7 +12,6 @@ Updates the info property of an AD account but preserves the original informatio
         $Comment
         )
 
-
 #carriage return, needed so everything does not end up on one line.        
 $crlf = "`r`n"
 
