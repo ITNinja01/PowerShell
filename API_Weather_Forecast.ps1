@@ -23,7 +23,11 @@ $API_Weather_URL = "https://api.weather.gov/points/$latitude,$longitude"
 $Full_Weather = Invoke-RestMethod $API_Weather_URL
 
 Write-Host "Latest:"
-(Invoke-RestMethod ($Full_Weather.properties.forecast)).Properties.periods | Select-Object name, detailedForecast -First 1 | Out-Default
+(Invoke-RestMethod ($Full_Weather.properties.forecast)).Properties.periods | Select-Object name, detailedForecast -First 1 -ExpandProperty detailedForecast | Out-Default
+
+#carriage return, needed to make sure lines do not touch in the terminal    
+$crlf = "`r`n"
+$crlf
 
 Write-Host "The next week:"
 (Invoke-RestMethod ($Full_Weather.properties.forecast)).Properties.periods | Select-Object name, temperature, shortForecast, windSpeed | Out-Default
