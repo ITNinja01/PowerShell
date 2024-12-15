@@ -8,4 +8,4 @@ $Today_Date = Get-Date
 #Adding + 1 since people count the day that it still is (today).
 $Days_Til_Christmas = 359 - $Today_Date.DayOfYear + 1
 
-Write-Host "$Days_Til_Christmas until Christmas ⛪🎅❄️🎄!" 
+Write-Host "$Days_Til_Christmas day(s) until Christmas ⛪🎅❄️🎄!" 
