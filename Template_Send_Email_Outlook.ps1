@@ -27,12 +27,12 @@ catch {
     Start-Process "C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE" -Wait
 }
 
-$My_Signaure = @"
+$My_Signature = @"
 "@
 
 $Body = @"
 
-$My_Signaure
+$My_Signature
 "@
 
 $outlookComObject = New-Object -ComObject Outlook.Application
