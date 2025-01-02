@@ -31,7 +31,7 @@ $Merry_Christmas  = @"
 "@
 
 #Check if the current year is a leap year. Using the Day of the year as my point of reference. Also adding one due to people still counting the day they are on. 
-if ((($Year % 4 -eq 0) -and ($Year % 100 -ne 0)) -or ($Year % 400 -eq 0))
+if ((($Current_Year  % 4 -eq 0) -and ($Current_Year  % 100 -ne 0)) -or ($Current_Year % 400 -eq 0))
 {
     $Days_Til_Christmas = 359 - $Today_Date.DayOfYear + 1
 }
