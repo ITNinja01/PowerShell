@@ -29,9 +29,9 @@ elseif ($bmi -ge 30 -and $bmi -lt 40) {
     Write-Host 'You are obese.' -BackgroundColor White -ForegroundColor DarkRed 
 }
 else {
-    Write-Host 'You are morbidly obese' -BackgroundColor White -ForegroundColor Yellow
+    Write-Host 'You are morbidly obese.' -BackgroundColor Red -ForegroundColor Yellow
 }
 
-#After changing foreground and background colors resetting back original host colors since PowerShell does hot do this on its own.
+#After changing foreground and background colors resetting back to the original host colors since PowerShell does not do this on its own.
 (Get-Host).UI.RawUI.ForegroundColor = $Org_Foreground
 (Get-Host).UI.RawUI.BackgroundColor = $Org_Background
