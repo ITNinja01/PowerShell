@@ -1,6 +1,8 @@
 <#
 .SYNOPSIS
 This script emulates a Dungeons & Dragons dice being rolled.
+.NOTES
+Recommendation from a colleague was to add ASCII art with a role and have 20 be a dragon.
 #>
 
 [CmdletBinding()]   
@@ -214,6 +216,7 @@ $Die_Face_20 = @"
 
 "@  
 
+#Hashtable used with the roll hit to match up the correct die face
 function Roll_Action_Function {
     $Roll_Action = @{
         1 = {Write-Host "$Die_Face_1"}
