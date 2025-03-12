@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-This script simplifies checking the file hash.
+This script simplifies checking the file hash if the file hash is already known.
 #>
 [CmdletBinding()]
 param (
