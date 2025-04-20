@@ -5,7 +5,7 @@ A script to get a specific verse and translation from the Bible API.
 This script prompts the user for a Bible verse and a translation, then retrieves and displays the requested verse using the Bible API.
 .EXAMPLE
 Enter the verse you want to see (e.g., 'john 3:16', 'jn 3:16', 'matt 25:31-33,46'): john 3: 16
-Enter the translation you want to use (default is 'web'): bbe
+Enter the translation you want to use (default is 'web')                          : bbe
 #>
 
 #User input for verse and translation
