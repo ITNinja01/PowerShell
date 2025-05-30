@@ -1,0 +1,14 @@
+- Nourishment: Carrot
+  Macronutrient: Carbohydrate
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple Juice
+  Macronutrient: Carbohydrate
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Sugar
+  Macronutrient: Carbohydrate
+  Target: Poor
+  Color: Red
