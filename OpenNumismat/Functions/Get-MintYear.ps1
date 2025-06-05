@@ -1,15 +1,21 @@
-function Get-MintYear {
     <#
-    .SYNOPSIS
-    This function retrieves the mint year of coins from a JSON file.
-    .DESCRIPTION
-    The Get-MintYear function reads a JSON file containing coin data and extracts the mint year of each coin.
-    .PARAMETER Descending
-    If set to true, the results will be sorted in descending order by year.
-    .EXAMPLE
-    Get-MintYear
-    This command retrieves the mint year of coins from the specified JSON file.    
-    #>
+.SYNOPSIS
+This function retrieves the mint year of coins from a JSON file.
+.DESCRIPTION
+The Get-MintYear function reads a JSON file containing coin data and extracts the mint year of each coin.
+.COMPONENT
+OpenNumismat
+.PARAMETER Descending
+If set to true, the results will be sorted in descending order by year.
+.EXAMPLE
+Get-MintYear
+.NOTES
+Developer: ITNinja01
+ Date: 06-04-2025   
+Version: 1.0  
+#>
+
+function Get-MintYear {
 param (
     [Parameter()]
     [bool]

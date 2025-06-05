@@ -1,16 +1,21 @@
-function Get-CountryByLetter {
     <#
-    .SYNOPSIS
-    This function retrieves coins from a JSON file based on the first letter of their country.
-    .DESCRIPTION
-    The Get-CountryByLetter function reads a JSON file containing coin data and filters the coins based on the first letter of the country name.
-    .PARAMETER Letter
-    The first letter of the country name to filter the coins.
-    .EXAMPLE
-    Get-CountryByLetter -Letter "A"
-    This command retrieves coins from the specified JSON file that start with the letter "A". All letters are accepted.
-    #>
+.SYNOPSIS
+This function retrieves coins from a JSON file based on the first letter of their country.
+.DESCRIPTION
+The Get-CountryByLetter function reads a JSON file containing coin data and filters the coins based on the first letter of the country name.
+.COMPONENT
+OpenNumismat
+.PARAMETER Letter
+The first letter of the country name to filter the coins.
+.EXAMPLE
+Get-CountryByLetter -Letter "A"
+.NOTES
+Developer: ITNinja01
+Date: 06-04-2025   
+Version: 1.0.1
+#>
 
+function Get-CountryByLetter {
 [CmdletBinding()]
 param(
 [Parameter(Mandatory)]
