@@ -7,8 +7,8 @@ This PowerShell script reads a YAML file containing food items and their nourish
 On Target Living Food Lookup
 .LINK
 https://ontargetliving.com/products/food-target
-https://cdn.shopify.com/s/files/1/0019/0460/7267/files/Food_Target_2022.pdf?v=1657654806
 
+https://cdn.shopify.com/s/files/1/0019/0460/7267/files/Food_Target_2022.pdf?v=1657654806
 #>
 $Food_List = ConvertFrom-Yaml (Get-Content -Path $PSScriptRoot\Food_Target_Data.yaml -Raw)
 

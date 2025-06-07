@@ -1,94 +1,424 @@
 - Nourishment: Carrot
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Apple Juice
-  Macronutrient: Carbohydrate
-  Target: Fair
-  Color: Orange
-
 - Nourishment: White Sugar
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Onion Rings
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
   
 - Nourishment: White flour
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Doughnuts
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Pastries
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Cookies
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red 
 
 - Nourishment: Cake 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Pie 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Ice Cream
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red 
 
 - Nourishment: French Fries 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Theater Popcorn 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Sugary Cereal
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Processed Cereal 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Refined crackers
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Refined chips 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
 - Nourishment: Diner pancakes 
-  Macronutrient: Carbohydrate
+  Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
+
+- Nourishment: Fast Food 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Fried Food 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Junk Food 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Deil Meat
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Hot Dogs
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Pork Sausage
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Bacon 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Fast Food Burger 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Frozen fish sticks
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Chicken Nuggets 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Whey Protein Powder 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Ice Cream 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Creatine Supplement 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Egg Substitutes
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Meat/Cheese Substitutes 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Bologna 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Margarine 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Shortening 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Gravy 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Refined Oils
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Refined Peanut Butter
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Vegetable Oil
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Soybean Oil
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Fractionated Oil 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Tempura 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Processed Cheese 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Hydrogenated Oils 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment:  Sunflower Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Safflower Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Cottonseed Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Peanut Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Corn Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Canola Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Palm kernel Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Butter
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: MCT Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Soy Milk/Protein
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Cow's Milk/Cheese
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Yogurt
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Kefir
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Collagen Supplements
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Pea Protein Powder
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Veggie Burger
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Bacon
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Frozen seafood
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Pork
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Nitrate-free Deli Meat
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Apple Juice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Orange Juice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment:  Canned Fruit
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Canned Vegetables 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Instant Potatoes
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Cereal
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Instant Oatmeal
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Pancakes mix
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Granola Bar
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic chips
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Canned Soup
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Homemade sweets
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic crackers
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Microwave Popcorn
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Short Grain Rice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Rice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Flour
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
