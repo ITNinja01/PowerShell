@@ -418,7 +418,238 @@
   Target: Fair
   Color: Orange
 
-- Nourishment: 
+- Nourishment: White Bread
   Macronutrient: Carbohydrates
   Target: Fair
   Color: Orange
+
+- Nourishment: White Pasta 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Cane Sugar
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic box mac and cheese
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Frozen meals
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Frozen Yogurt
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Tomato Sauce
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Dried Cherries
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Apple Sauce
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic corn/popcorn
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Medium Grain Rice
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Unbleached Whole Wheat Flour
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Couscous/Orzo
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Semolina Pasta
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Sourdough Bread
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Udon/Soba Noodles
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Russet Potatoes
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Frozen Vegetables
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Arrowroot Starch
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Quick Oats
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Oatmeal pancakes
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Granola
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic food bars
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Wild Rice
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Wheat berries
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Feekeh
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Oranges
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Bananas 
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Dried Mangos
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Shedded Coconut
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Dates
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Pineapple
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Grapefruit
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Peaches
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Pears
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Melon
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Raisins
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Brown Rice
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Sprouted Grains/Bread
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Tomatoes
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Cauliflower
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Cucumbers
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Red Skin Potatoes
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Beans
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Rolled Oats
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Farro
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Coconut Flour
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
