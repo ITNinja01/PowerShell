@@ -1,8 +1,3 @@
-- Nourishment: Carrot
-  Macronutrient: Carbohydrates
-  Target: Best
-  Color: Dark Green
-
 - Nourishment: White Sugar
   Macronutrient: Carbohydrates
   Target: Poor
@@ -533,6 +528,101 @@
   Target: Good
   Color: Yellow
 
+- Nourishment: Shellfish
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Farm raised seafood
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Canned Tuna/Salmon 
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Beef
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Egg
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Chicken Sausage 
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Edamame
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic soy products
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic dairy
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Rice/pea/oat milk
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Plant protein powder
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Goat/Sheep Cheese/Milk
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Olive Oil
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Sesame Oil
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Cashew Butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Natural Peanut Butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Sunflower Seed Butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic grass-fed butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Coconut Oil
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
 - Nourishment: Wild Rice
   Macronutrient: Carbohydrates
   Target: Better
@@ -653,3 +743,412 @@
   Target: Better
   Color: Light Green
 
+- Nourishment: Organic seafood
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: grass-fed beef
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Bone Broth
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic Eggs
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Hemp protein powder
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic Nut/seed milk
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Sprouted Grains/Bread
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic Edamame Beans
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Fish/Krill Oil
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Avocado Oil
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Almond Oil 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Red Palm Oil 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Macadamia Nuts 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Cashews 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Pistachios 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Peanuts
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Peanuts 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Sunflower Seeds 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Ghee 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Carrots
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Berries
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Lemons
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Limes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Mangoes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Coconut 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Broccoli
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wheatgrass 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Leafy Greens 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Brussels Sprouts 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Root Vegetables 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Celery 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Cabbage 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Figs 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Onion 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Asparagus 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Sea Vegetables
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Spirulina/Chlorella
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Sweet Potatoes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Purple Potatoes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Legumes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Buckwheat 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Oat Groats
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Teff 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Steel Cut Oats
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Millet 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Long Grain Rice 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw cacao 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Quinoa 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Garlic 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Mushrooms 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Alaskan cod liver oil
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Avocado 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Virgin Coconut Oil 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Almond Butter 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Extra Virgin Olive Oil
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Olives 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Pumpkin Seeds 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Walnuts 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Hemp/Flex/Chia Seeds
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Brazil Nuts 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Almonds 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wild Caught Salmon 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Coconut butter 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw cacao
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Organic free-range poultry/eggs
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wild Caught Fish 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wild Game 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw nuts/seeds 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Hemp Seeds 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Homemade nut/seed milk 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Buckwheat 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Oat Groats 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Quinoa 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Teff 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Broccoli 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Spirulina/Chlorella 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Steel 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Legumes 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green

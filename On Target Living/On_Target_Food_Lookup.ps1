@@ -21,7 +21,8 @@ if (-not $Food_Selection) {
     Write-Host "Food item not found. Please check the input."
 # Suggest similar food items based on the input
     $Possible_Foods = $Food_List | Where-Object {$_.Nourishment -like "*$Eat*"} | Select-Object Nourishment | Out-String
-        if ($Possible_Foods) {
+ #Only display if possible matches are found       
+    if ($Possible_Foods) {
              Write-Host "Found possible matches: $Possible_Foods"
         }
         }
