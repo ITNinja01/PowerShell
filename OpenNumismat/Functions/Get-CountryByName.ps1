@@ -11,8 +11,8 @@ The name of the country to filter the coins.
 Get-CountryByName -name "United States"
 .NOTES
 Developer: ITNinja01
-Date: 06-04-2025   
-Version: 1.0.1
+Date: 06-08-2025   
+Version: 1.0.2
 #>
 
 function Get-CountryByName {
@@ -28,6 +28,6 @@ if ($global:Json_Coins -eq $null) {
 
 if (Test-Path $global:Json_Coins) {
     $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-    $Coins.coins | select-object country, title, year, grade | Where-Object { $_.country -is "$Name" }
+    $Coins.coins | select-object country, title, year, grade | Where-Object { $_.country -eq "$Name" }
 }
 }  
