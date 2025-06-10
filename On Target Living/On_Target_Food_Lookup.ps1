@@ -10,6 +10,7 @@ https://ontargetliving.com/products/food-target
 
 https://cdn.shopify.com/s/files/1/0019/0460/7267/files/Food_Target_2022.pdf?v=1657654806
 #>
+
 $Food_List = ConvertFrom-Yaml (Get-Content -Path $PSScriptRoot\Food_Target_Data.yaml -Raw)
 
 # Prompt the user for a food item and search the list. Have to use Out-String to convert the hashtable object to a string for display.

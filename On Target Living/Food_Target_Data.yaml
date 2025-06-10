@@ -1,3 +1,4 @@
+# This file contains the food target data for On Target Living. 
 - Nourishment: White Sugar
   Macronutrient: Carbohydrates
   Target: Poor
@@ -1448,7 +1449,122 @@
   Target: Poor
   Color: Red
 
-- Nourishment: 
+- Nourishment: Sweetened tea
   Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Champagne
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Liquor 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Beer 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed creamer 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Hard Cider 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Distilled vinegar  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Refined jam/jelly  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed ketchup  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Mayo/Miracle Whip  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Vegenaise  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed hot/BBQ sauce  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Ranch Dressing  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Soy Sauce  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment:  Candy
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Xanthan/Guar Gum  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Milk/white chocolate 
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: High Fructose Corn Syrup  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment:  Citric Acid  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: White Sugar  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed Syrup  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Artificial Sweeteners  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Ionized/refined salt  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: MSG  
+  Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
