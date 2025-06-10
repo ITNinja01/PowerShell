@@ -1,0 +1,1570 @@
+# This file contains the food target data for On Target Living. 
+- Nourishment: White Sugar
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Onion Rings
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+  
+- Nourishment: White flour
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Doughnuts
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Pastries
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Cookies
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Cake 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Pie 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Ice Cream
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red 
+
+- Nourishment: French Fries 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Theater Popcorn 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Sugary Cereal
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed Cereal 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Refined crackers
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Refined chips 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Diner pancakes 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Fast Food 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Fried Food 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Junk Food 
+  Macronutrient: Carbohydrates
+  Target: Poor
+  Color: Red
+
+- Nourishment: Deil Meat
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Hot Dogs
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Pork Sausage
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Bacon 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Fast Food Burger 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Frozen fish sticks
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Chicken Nuggets 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Whey Protein Powder 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Ice Cream 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Creatine Supplement 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Egg Substitutes
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Meat/Cheese Substitutes 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Bologna 
+  Macronutrient: Proteins
+  Target: Poor
+  Color: Red 
+
+- Nourishment: 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Margarine 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Shortening 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Gravy 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Refined Oils
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Refined Peanut Butter
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Vegetable Oil
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Soybean Oil
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Fractionated Oil 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Tempura 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Processed Cheese 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment: Hydrogenated Oils 
+  Macronutrient: Fats
+  Target: Poor
+  Color: Red 
+
+- Nourishment:  Sunflower Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Safflower Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Cottonseed Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Peanut Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Corn Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Canola Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Palm kernel Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Butter
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: MCT Oil
+  Macronutrient: Fats
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Soy Milk/Protein
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Cow's Milk/Cheese
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Yogurt
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Kefir
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Collagen Supplements
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Pea Protein Powder
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Veggie Burger
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Bacon
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Frozen seafood
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Pork
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Nitrate-free Deli Meat
+  Macronutrient: Proteins
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Apple Juice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Orange Juice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment:  Canned Fruit
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Canned Vegetables 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Instant Potatoes
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Cereal
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Instant Oatmeal
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Pancakes mix
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Granola Bar
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic chips
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Canned Soup
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Homemade sweets
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic crackers
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Microwave Popcorn
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Short Grain Rice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Rice
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Flour
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Bread
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: White Pasta 
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Cane Sugar
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic box mac and cheese
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Organic Frozen meals
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Frozen Yogurt
+  Macronutrient: Carbohydrates
+  Target: Fair
+  Color: Orange
+
+- Nourishment: Tomato Sauce
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Dried Cherries
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Apple Sauce
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic corn/popcorn
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Medium Grain Rice
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Unbleached Whole Wheat Flour
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Couscous/Orzo
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Semolina Pasta
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Sourdough Bread
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Udon/Soba Noodles
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Russet Potatoes
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Frozen Vegetables
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Arrowroot Starch
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Quick Oats
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Oatmeal pancakes
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Granola
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic food bars
+  Macronutrient: Carbohydrates
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Shellfish
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Farm raised seafood
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Canned Tuna/Salmon 
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Beef
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Egg
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Chicken Sausage 
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Edamame
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic soy products
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic dairy
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Rice/pea/oat milk
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Plant protein powder
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Goat/Sheep Cheese/Milk
+  Macronutrient: Proteins
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Olive Oil
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Sesame Oil
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Cashew Butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Natural Peanut Butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Sunflower Seed Butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic grass-fed butter
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Coconut Oil
+  Macronutrient: Fats
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Wild Rice
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Wheat berries
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Feekeh
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Oranges
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Bananas 
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Dried Mangos
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Shedded Coconut
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Dates
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Pineapple
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Grapefruit
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Peaches
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Pears
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Melon
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Raisins
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Brown Rice
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Sprouted Grains/Bread
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Tomatoes
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Cauliflower
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Cucumbers
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Red Skin Potatoes
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Beans
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Rolled Oats
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Farro
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Coconut Flour
+  Macronutrient: Carbohydrates
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic seafood
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: grass-fed beef
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Bone Broth
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic Eggs
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Hemp protein powder
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic Nut/seed milk
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Sprouted Grains/Bread
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Organic Edamame Beans
+  Macronutrient: Proteins
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Fish/Krill Oil
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Avocado Oil
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Almond Oil 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Red Palm Oil 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Macadamia Nuts 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Cashews 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Pistachios 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Peanuts
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Peanuts 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Sunflower Seeds 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Ghee 
+  Macronutrient: Fats
+  Target: Better
+  Color: Light Green
+
+- Nourishment: Carrots
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Berries
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Lemons
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Limes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Mangoes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Coconut 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Broccoli
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wheatgrass 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Leafy Greens 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Brussels Sprouts 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Root Vegetables 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Celery 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Cabbage 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Figs 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Onion 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Asparagus 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Sea Vegetables
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Spirulina/Chlorella
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Sweet Potatoes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Purple Potatoes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Legumes 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Buckwheat 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Oat Groats
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Teff 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Steel Cut Oats
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Millet 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Long Grain Rice 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw cacao 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Quinoa 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Garlic 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Mushrooms 
+  Macronutrient: Carbohydrates
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Alaskan cod liver oil
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Avocado 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Virgin Coconut Oil 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Almond Butter 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Extra Virgin Olive Oil
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Olives 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Pumpkin Seeds 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Walnuts 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Hemp/Flex/Chia Seeds
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Brazil Nuts 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Almonds 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wild Caught Salmon 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Coconut butter 
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw cacao
+  Macronutrient: Fats
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Organic free-range poultry/eggs
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wild Caught Fish 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Wild Game 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw nuts/seeds 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Hemp Seeds 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Homemade nut/seed milk 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Buckwheat 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Oat Groats 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Quinoa 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Teff 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Broccoli 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Spirulina/Chlorella 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Steel 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Legumes 
+  Macronutrient: Proteins
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Mineral Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Organic nut/seed milk
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Ionized Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Kombucha
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Artesian/Spring Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Coconut Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Organic Herbal/Green Tea
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw Juice
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Turmeric
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Cinnamon
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Ginger
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw cacao
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Sea Salt
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw Honey
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Fresh Herbs
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Dates
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Spices
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple cider/balsamic vinegar
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Avocado/olive Oil mayo
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple butter
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw sauerkraut
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Maca powder
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Kimchi
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Red wine vinegar
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic jellies/jams
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic ketchup
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic hot/BBQ sauce
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic salsa
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic dressing
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic tamari/liquid aminos
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Coconut sugar
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Pure Maple Syrup
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Dark Chocolate
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Cane sugar
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Agave Nectar
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Molasses
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Stevia
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Kosher Salt
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Carbonated Water
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Aloe Vera Water
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic/craft coffee
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Filtered/Tap Water
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic cow/soy milk
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Nut milk creamer
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic half and half
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: 100% Fruit Juice
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Rice/pea/oat milk
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Red/white wine
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Green/Black Tea
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Distilled Water
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Coffee
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Whey Protein Shakes 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed sports drinks 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: energy drinks 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Soda 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Pop 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: flavored drink mix 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Sweetened tea
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Champagne
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Liquor 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Beer 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed creamer 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Hard Cider 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Distilled vinegar  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Refined jam/jelly  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed ketchup  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Mayo/Miracle Whip  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Vegenaise  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed hot/BBQ sauce  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Ranch Dressing  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment: Soy Sauce  
+  Type of food: Condiments
+  Target: Poor
+  Color: Red
+
+- Nourishment:  Candy
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Xanthan/Guar Gum  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Milk/white chocolate 
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: High Fructose Corn Syrup  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment:  Citric Acid  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: White Sugar  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed Syrup  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Artificial Sweeteners  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: Ionized/refined salt  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
+
+- Nourishment: MSG  
+  Type of food: Sweeteners/Flavors
+  Target: Poor
+  Color: Red
