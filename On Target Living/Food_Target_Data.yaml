@@ -1152,3 +1152,303 @@
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
+
+- Nourishment: Mineral Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Organic nut/seed milk
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Ionized Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Kombucha
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Artesian/Spring Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Coconut Water
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Organic Herbal/Green Tea
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw Juice
+  Type of food: Beverages
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Turmeric
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Cinnamon
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Ginger
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw cacao
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Sea Salt
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw Honey
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Fresh Herbs
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Dates
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Spices
+  Type of food: Sweeteners/Flavors
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple cider/balsamic vinegar
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: 
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Avocado/olive Oil mayo
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Apple butter
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Raw sauerkraut
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Maca powder
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Kimchi
+  Type of food: Condiments
+  Target: Best
+  Color: Dark Green
+
+- Nourishment: Red wine vinegar
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic jellies/jams
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic ketchup
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic hot/BBQ sauce
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic salsa
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic dressing
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic tamari/liquid aminos
+  Type of food: Condiments
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Coconut sugar
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Pure Maple Syrup
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Dark Chocolate
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Cane sugar
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Agave Nectar
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Molasses
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Stevia
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Kosher Salt
+  Type of food: Sweeteners/Flavors
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Carbonated Water
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Aloe Vera Water
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic/craft coffee
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Filtered/Tap Water
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic cow/soy milk
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Nut milk creamer
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic half and half
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: 100% Fruit Juice
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Rice/pea/oat milk
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Red/white wine
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Organic Green/Black Tea
+  Type of food: Beverages
+  Target: Good
+  Color: Yellow
+
+- Nourishment: Distilled Water
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Coffee
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Whey Protein Shakes 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Processed sports drinks 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: energy drinks 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Soda 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: Pop 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: flavored drink mix 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
+
+- Nourishment: 
+  Type of food: Beverages
+  Target: Poor
+  Color: Red
