@@ -23,8 +23,23 @@ $Tron_Art = @"
               .c;;''',;,          .oo::cccl:.             'ldigitalllc.      ..,;:ccllllc:'.         .:c:::::ll.                 .,,',,c.
 "@
 
+$Intro = @"
+Welcome to TRON!
+Tron fights for the users!
+This script is designed to speed up and protect your computer
+"@
+
 Write-Host $Tron_Art
-Write-Host "Tron fights for the users!"
-Write-Host "This script is designed to speed up and protect your computer"
+Write-Host $Intro
 
+Write-Host "Deleting temporary files..."
+Remove-Item -Path "$env:TEMP\*" -Recurse -Force -Verbose
 
+Write-Host "Clearing recycle bin..."
+Clear-RecycleBin -Force -Verbose
+
+Write-Host "Updating PowerShell Help..."
+Update-help -Force -Verbose
+
+write-host $Tron_Art
+Write-Host "TRON has completed its mission. Goodbye, user!"
