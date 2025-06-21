@@ -4,6 +4,16 @@
 .LINK
 https://github.com/mikebell/asciitron/blob/master/tron.txt#L1
 #>
+
+# Check and elevate
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
+    [Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    
+    $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"$PSScriptRoot\TRON.ps1`""
+    Start-Process powershell -Verb RunAs -ArgumentList $arguments
+    exit
+}
+
 $Tron_Art = @"
 ........'''''.      ..'',,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;,..                ..';:cc::;,..           .;;;;,                   .''''''.'
 ,:'........,dc    ,loc;;;,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;cod1'           'codlc:,,,,;:loxxc'      ..xx;;;dd.                 cx,....,o'
@@ -32,6 +42,8 @@ This script is designed to speed up and protect your computer
 Write-Host $Tron_Art
 Write-Host $Intro
 
+
+
 Write-Host "Deleting temporary files..."
 Remove-Item -Path "$env:TEMP\*" -Recurse -Force -Verbose
 
@@ -43,3 +55,4 @@ Update-help -Force -Verbose
 
 write-host $Tron_Art
 Write-Host "TRON has completed its mission. Goodbye, user!"
+
