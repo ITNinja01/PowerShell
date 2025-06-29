@@ -5,15 +5,6 @@
 https://github.com/mikebell/asciitron/blob/master/tron.txt#L1
 #>
 
-# Check and elevate
-if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
-    [Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    
-    $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"$PSScriptRoot\TRON.ps1`""
-    Start-Process powershell -Verb RunAs -ArgumentList $arguments
-    exit
-}
-
 $Tron_Art = @"
 ........'''''.      ..'',,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;,..                ..';:cc::;,..           .;;;;,                   .''''''.'
 ,:'........,dc    ,loc;;;,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;cod1'           'codlc:,,,,;:loxxc'      ..xx;;;dd.                 cx,....,o'
@@ -36,19 +27,25 @@ $Tron_Art = @"
 $Intro = @"
 Welcome to TRON!
 Tron fights for the users!
-This script is designed to speed up and protect your computer
+This script is designed to speed up and protect your computer; this script assumes you are running it with administrative privileges. If not, please run PowerShell as an administrator.
 "@
 
 Write-Host $Tron_Art
 Write-Host $Intro
 
-
-
 Write-Host "Deleting temporary files..."
 Remove-Item -Path "$env:TEMP\*" -Recurse -Force -Verbose
 
 Write-Host "Clearing recycle bin..."
-Clear-RecycleBin -Force -Verbose
+Read-Host "Do you want to clear the recycle bin? (Y/N)
+" -Prompt "Confirm" | ForEach-Object {
+    if ($_ -eq 'Y' -or $_ -eq 'y') {
+        Write-Host "Clearing recycle bin..."
+        Clear-RecycleBin -Force -Verbose
+    } else {
+        Write-Host "Skipping recycle bin clearance."
+    }
+}
 
 Write-Host "Updating PowerShell Help..."
 Update-help -Force -Verbose
@@ -56,3 +53,26 @@ Update-help -Force -Verbose
 write-host $Tron_Art
 Write-Host "TRON has completed its mission. Goodbye, user!"
 
+Write-Host "Syncing time with NTP server..."
+w32tm /resync /nowait
+
+Write-Host "Running Disk Cleanup..."
+Start-Process -FilePath "cleanmgr.exe" -ArgumentList "/sagerun:1" -Wait -NoNewWindow
+
+Write-Host "Running Windows Update..."
+Install-WindowsUpdate -AcceptAll -Wait -NoNewWindow -Verbose
+
+Write-Host "Running System File Checker..."
+sfc /scannow
+
+Write-Host "Running DISM to repair Windows image..."
+dism /Online /Cleanup-Image /RestoreHealth
+
+Write-Host "Defragmenting hard drive...
+if (-not trimmed -eq $true) {
+    Write-Host "Defragmentation is not supported on this system."
+} else {
+    Start-Process -FilePath "defrag.exe" -ArgumentList "/C /O /H /V" -Wait -NoNewWindow
+}
+
+defrag C: /O /H /V"
