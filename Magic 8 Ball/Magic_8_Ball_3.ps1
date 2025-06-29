@@ -3,6 +3,19 @@
 This script is as a text-based Magic 8 Ball using a YAML file.
 #>
 
+#Ensure the required module is installed
+$moduleName = 'powershell-yaml'
+if (-not (Get-Module -ListAvailable -Name $moduleName)) {
+    try {
+        Install-Module -Name $moduleName -Scope CurrentUser -Force -ErrorAction Stop -Verbose
+    } catch {
+        Write-Error "Could not install module '$moduleName'. Please install it manually."
+        exit 1
+    }
+}
+Import-Module $moduleName
+
+
 #Asking the user for a question, any input is fine and will not be used in the program. 
 $Question = Read-Host "Ask the Magic 8 Ball a Question"
 
