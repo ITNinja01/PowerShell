@@ -1,4 +1,4 @@
-    <#
+<#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the first letter of their country.
 .DESCRIPTION
@@ -12,7 +12,7 @@ Get-CountryByLetter -Letter "A"
 .NOTES
 Developer: ITNinja01
 Date: 06-04-2025   
-Version: 1.0.1
+Version: 1.0.2
 #>
 
 function Get-CountryByLetter {
