@@ -1,4 +1,3 @@
-
 <#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the coin's mint year.
@@ -7,13 +6,13 @@ The Get-CountryByName function reads a JSON file containing coin data and filter
 .COMPONENT
 OpenNumismat
 .PARAMETER Year
-The year of the coin to search for. The function will return coins that match this year.
+The year of the coin to search for. The function will return coins that match the year pattern.
 .EXAMPLE
 get-MintYearSearch
 .NOTES
 Developer: ITNinja01
-Date: 06-04-2025   
-Version: 1.0.1
+Date: 07-05-2025   
+Version: 1.0.2
 #>
 
 function Get-MintYearSearch {

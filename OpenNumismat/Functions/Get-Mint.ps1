@@ -11,17 +11,12 @@ The mint of the coin to search for. The function will return coins that match th
 Get-Mint -Mint "San Francisco"
 .NOTES
 Developer: ITNinja01
-Date: 06-04-2025   
-Version: 1.0
+Date: 07-05-2025   
+Version: 2.0
 #>
 
 function Get-Mint {
-[CmdletBinding()]
-param(
-[Parameter(Mandatory)]
-    [string]
-    $Mint
-)    
+$Mint = Read-Host -Prompt "Type in the mint or part of the mint to search for?"
 
 if ($global:Json_Coins -eq $null) {
    $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"

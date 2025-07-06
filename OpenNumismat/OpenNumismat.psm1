@@ -12,3 +12,7 @@ Export-ModuleMember -Function Get-MintYear
 Export-ModuleMember -Function Get-MintYearSearch
 . $PSScriptRoot\Functions\Get-ThreeRandomCoins.ps1
 Export-ModuleMember -Function Get-ThreeRandomCoins
+. $PSScriptRoot\Functions\Get-SeriesSearch.ps1
+Export-ModuleMember -Function Get-SeriesSearch
+. $PSScriptRoot\Functions\Get-TitleSearch.ps1
+Export-ModuleMember -Function Get-TitleSearch
