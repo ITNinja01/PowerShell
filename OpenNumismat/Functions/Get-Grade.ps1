@@ -11,15 +11,15 @@ The grade of the coin to search for. The function will return coins that match t
 Get-Grade -Grade "01"
 .NOTES
 Developer: ITNinja01
-Date: 06-04-2025   
-Version: 1.0
+Date: 07-14-2025   
+Version: 1.0.1
 #>
 function Get-Grade {
 [CmdletBinding()]
 param(
 [Parameter(Mandatory)]
     [string]
-    [ValidateSet("01","02","03","04","06","08","10","12","15","20","25","30","35","40","45","50","53","55","58","60","61","62","63","64","65","66","67","68","69","70","Ungradable")]
+    [ValidateSet("01","02","03","04","06","08","10","12","15","20","25","30","35","40","45","50","53","55","58","60","61","62","63","64","65","66","67","68","69","70","Upgradable")]
     $Grade
 )    
 

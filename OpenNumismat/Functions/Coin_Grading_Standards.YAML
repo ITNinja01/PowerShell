@@ -1,0 +1,114 @@
+Sourcing: 
+  Name: PCGS Grading Standards
+  Link: "https://www.pcgs.com/grades"
+
+Grade:
+- Grade: 70
+  Description: Fully struck and lustrous, free of visual marks. The PCGS 70 grading standard does allow for as minted defects, as long as those flaws are minor and do not impact the eye appeal of the coin. 
+  Name: MS/PR-70
+  FullName: Mint State/Proof State
+
+- Grade: 69
+  Description: Virtually fully struck with minuscule imperfections visible upon close inspection.
+  Name: MS/PR-69
+  FullName: Mint State/Proof State 
+
+- Grade: 68
+  Description: Only the slightest weakness in strike with a few tiny imperfections barely visible.
+  Name: MS/PR-68
+  FullName: Mint State/Proof State
+
+- Grade: 67
+  Description: Very well struck with minor imperfections visible without magnification.  
+  Name: MS/PR-67
+  FullName: Mint State/Proof State
+
+- Grade: 66
+  Description: Well struck with a few marks or hairlines, not in focal areas.
+  Name: MS/PR-66
+  FullName: Mint State/Proof State
+
+- Grade: 65
+  Description: Above average strike with minor marks or hairlines, mostly out of focal areas.
+  Name: MS/PR-65
+  FullName: Mint State/Proof State
+
+- Grade: 64
+  Description: Average or better strike with scattered marks or hairlines, though none severe.
+  Name: MS/PR-64
+  FullName: Mint State/Proof State
+
+- Grade: 63
+  Description: Average or slightly weak strike with moderate marks or hairlines.
+  Name: MS/PR-63
+  FullName: Mint State/Proof State 
+
+- Grade: 62
+  Description: No wear, with average or below average strike. Numerous marks or hairlines.
+  Name: MS/PR-62
+  FullName: Mint State/Proof State
+
+- Grade: 61
+  Description: No wear, with average or weak strike. Multiple heavy marks or hairlines allowed.
+  Name: MS/PR-61
+  FullName: Mint State/Proof State
+
+- Grade: 60
+  Description: No wear. May be poorly struck with many heavy marks or hairlines.
+  Name: MS/PR-60
+  FullName: Mint State/Proof State 
+
+- Grade: 58
+  Description: Only the slightest friction on the highest points. Virtually full luster.
+  Name: AU-58
+  FullName: About Uncirculated
+
+- Grade: 55
+  Description: Full detail, with light friction on the high points. Considerable luster remains.
+  Name: AU-55
+  FullName: About Uncirculated
+
+- Grade: 53
+  Description: Slight flatness and loss of luster visible on high points of design. Some luster remains.
+  Name: AU-53
+  FullName: About Uncirculated
+
+- Grade: 50
+  Description: Trace of wear now seen on higher points of design. Bits of luster may remain.
+  Name: AU-50
+  FullName: About Uncirculated
+
+- Grade: 45
+  Description: High points of design show light wear. A bit of luster may still be visible in protected areas.
+  Name: XF-45
+  FullName: Extremely Fine
+
+- Grade: 40
+  Description: All design elements still show, but high points now worn flat. Little to no luster remains.
+  Name: XF-45
+  FullName: Extremely Fine
+
+- Grade: 35
+  Description: Light wear is seen over entire surface though all major detail still visible.
+  Name: VF-35
+  FullName: Very Fine
+
+- Grade: 30
+  Description: Wear now evident over entire surface. Intricate design detail beginning to flatten.
+  Name: VF-30
+  FullName: Very Fine
+
+- Grade: 25
+  Description: Entire surface shows some wear, but major design features remain clear.
+  Name: VF-25
+  FullName: Very Fine
+
+- Grade: 20
+  Description: Moderate wear with some loss of detail evident in design.
+  Name: VF-20
+  FullName: Very Fine
+
+- Grade: 
+  Description:
+  Name: 
+  FullName: 
