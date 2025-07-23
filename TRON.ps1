@@ -50,9 +50,6 @@ Read-Host "Do you want to clear the recycle bin? (Y/N)
 Write-Host "Updating PowerShell Help..."
 Update-help -Force -Verbose
 
-write-host $Tron_Art
-Write-Host "TRON has completed its mission. Goodbye, user!"
-
 Write-Host "Syncing time with NTP server..."
 w32tm /resync /nowait
 
@@ -75,4 +72,31 @@ if (-not trimmed -eq $true) {
     Start-Process -FilePath "defrag.exe" -ArgumentList "/C /O /H /V" -Wait -NoNewWindow
 }
 
-defrag C: /O /H /V"
+write-host $Tron_Art
+Write-Host "TRON has completed its mission. Goodbye, user!"
+
+#look into this code
+    Get-WmiObject Win32_LogicalDisk -Filter "DriveType = 3" | ForEach-Object {
+        $drive = $_
+        $supportsTrim = $false
+
+        # Check if the drive is an SSD (a strong indicator of TRIM support)
+        $isSSD = ($drive.MediaType -match "SSD") -or ($drive.Model -match "SSD") -or ($drive.Description -match "SSD")
+
+        # Check the filesystem (NTFS generally supports TRIM)
+        $filesystem = Get-Volume -DriveLetter $drive.DeviceID | Select-Object FileSystem
+
+        # Output the information.  We can't definitively say TRIM is *enabled*, but this gives strong hints.
+        Write-Host "Drive: $($drive.DeviceID)"
+        Write-Host "Media Type: $($drive.MediaType)"
+        Write-Host "Model: $($drive.Model)"
+        Write-Host "Description: $($drive.Description)"
+        Write-Host "File System: $($filesystem.FileSystem)"
+        Write-Host "Likely SSD: $($isSSD)"
+        if ($isSSD -and ($filesystem.FileSystem -eq "NTFS")) {
+            Write-Host "TRIM likely enabled (but not guaranteed)."
+        } else {
+            Write-Host "TRIM likely not enabled (or not applicable)."
+        }
+        Write-Host "--------------------"
+    }
