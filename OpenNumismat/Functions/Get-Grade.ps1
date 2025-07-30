@@ -11,8 +11,8 @@ The grade of the coin to search for. The function will return coins that match t
 Get-Grade -Grade "01"
 .NOTES
 Developer: ITNinja01
-Date: 06-04-2025   
-Version: 1.0
+Date: 07-17-2025   
+Version: 1.0.0
 #>
 function Get-Grade {
 [CmdletBinding()]

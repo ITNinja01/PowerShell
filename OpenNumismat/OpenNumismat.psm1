@@ -16,3 +16,7 @@ Export-ModuleMember -Function Get-ThreeRandomCoins
 Export-ModuleMember -Function Get-SeriesSearch
 . $PSScriptRoot\Functions\Get-TitleSearch.ps1
 Export-ModuleMember -Function Get-TitleSearch
+. $PSScriptRoot\Functions\Get-GradeInformation.ps1
+Export-ModuleMember -Function Get-GradeInformation
+. $PSScriptRoot\Functions\Get-GradeImageExample.ps1
+Export-ModuleMember -Function Get-GradeImageExample
