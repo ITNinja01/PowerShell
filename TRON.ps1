@@ -1,8 +1,18 @@
 <#
 .SYNOPSIS
-
+A script to clean and optimize a Windows PC.
+.DESCRIPTION
+This script performs various maintenance tasks to clean and optimize a Windows PC, including deleting temporary files, clearing the recycle bin, updating PowerShell help files, syncing time with an NTP server, running Disk Cleanup, installing Windows updates, running System File Checker (sfc), repairing the Windows image using DISM, and defragmenting the hard drive.
+.COMPONENT
+PowerShell, Windows Update, DISM, SFC, Disk Cleanup
+.EXAMPLE
+Run the script in a PowerShell window with administrative privileges to perform all maintenance tasks.
 .LINK
+Tron text art source:
 https://github.com/mikebell/asciitron/blob/master/tron.txt#L1
+.ROLE   
+This script is intended for use by system administrators and advanced users who want to maintain and optimize their Windows PCs.
+It assumes the user has administrative privileges.
 #>
 
 $Tron_Art = @"
@@ -92,38 +102,8 @@ sfc /scannow
 Write-Host "Running DISM to repair Windows image..."
 dism /Online /Cleanup-Image /RestoreHealth
 
-Write-Host "Defragmenting hard drive...
-if (-not trimmed -eq $true) {
-    Write-Host "Defragmentation is not supported on this system."
-} else {
-    Start-Process -FilePath "defrag.exe" -ArgumentList "/C /O /H /V" -Wait -NoNewWindow
-}
+Write-Host "Defragmenting hard drive..."
+Start-Process -FilePath "defrag.exe" -ArgumentList "/C /O /H /V" -Wait -NoNewWindow
 
 write-host $Tron_Art
 Write-Host "TRON has completed its mission. Goodbye, user!"
-
-#look into this code
-    Get-WmiObject Win32_LogicalDisk -Filter "DriveType = 3" | ForEach-Object {
-        $drive = $_
-        $supportsTrim = $false
-
-        # Check if the drive is an SSD (a strong indicator of TRIM support)
-        $isSSD = ($drive.MediaType -match "SSD") -or ($drive.Model -match "SSD") -or ($drive.Description -match "SSD")
-
-        # Check the filesystem (NTFS generally supports TRIM)
-        $filesystem = Get-Volume -DriveLetter $drive.DeviceID | Select-Object FileSystem
-
-        # Output the information.  We can't definitively say TRIM is *enabled*, but this gives strong hints.
-        Write-Host "Drive: $($drive.DeviceID)"
-        Write-Host "Media Type: $($drive.MediaType)"
-        Write-Host "Model: $($drive.Model)"
-        Write-Host "Description: $($drive.Description)"
-        Write-Host "File System: $($filesystem.FileSystem)"
-        Write-Host "Likely SSD: $($isSSD)"
-        if ($isSSD -and ($filesystem.FileSystem -eq "NTFS")) {
-            Write-Host "TRIM likely enabled (but not guaranteed)."
-        } else {
-            Write-Host "TRIM likely not enabled (or not applicable)."
-        }
-        Write-Host "--------------------"
-    }
