@@ -16,7 +16,8 @@ $moduleName = 'powershell-yaml'
 if (-not (Get-Module -ListAvailable -Name $moduleName)) {
     try {
         Install-Module -Name $moduleName -Scope CurrentUser -Force -ErrorAction Stop -Verbose
-    } catch {
+    }
+    catch {
         Write-Error "Could not install module '$moduleName'. Please install it manually."
         exit 1
     }
@@ -28,18 +29,18 @@ $Food_List = ConvertFrom-Yaml (Get-Content -Path $PSScriptRoot\Food_Target_Data.
 
 #Prompt the user for a food item and search the list. Have to use Out-String to convert the hashtable object to a string for display.
 $Eat = Read-Host -Prompt "What do you want to eat? (Enter a food item)"
-$Food_Selection = $Food_List | Where-Object {$_.Nourishment -eq $Eat} | Out-String 
+$Food_Selection = $Food_List | Where-Object { $_.Nourishment -eq $Eat } | Out-String 
 
 #Check if the food item exists in the list
 if (-not $Food_Selection) {
     Write-Host "Food item not found. Please check the input."
-#Suggest similar food items based on the input
-    $Possible_Foods = $Food_List | Where-Object {$_.Nourishment -like "*$Eat*"} | Select-Object Nourishment | Out-String
-#Only display if possible matches are found       
+    #Suggest similar food items based on the input
+    $Possible_Foods = $Food_List | Where-Object { $_.Nourishment -like "*$Eat*" } | Select-Object Nourishment | Out-String
+    #Only display if possible matches are found       
     if ($Possible_Foods) {
-             Write-Host "Found possible matches: $Possible_Foods"
-        }
-        }
+        Write-Host "Found possible matches: $Possible_Foods"
+    }
+}
 else {  
     write-host "You have selected Nourishment: $Food_Selection"
 }

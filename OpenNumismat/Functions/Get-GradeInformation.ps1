@@ -12,8 +12,8 @@ Specifies the grade of the coin. Valid values are "01", "02", "03", "04", "06", 
 Get-GradeInformation -Grade "65"
 .NOTES
 Developer: ITNinja01
-Date: 07-27-2025   
-Version: 1.0.0
+Date: 09-03-2025   
+Version: 1.0.1
 #>
 
 function Get-GradeInformation {

@@ -8,16 +8,16 @@ $Org_Foreground = (Get-Host).UI.RawUI.ForegroundColor
 $Org_Background = (Get-Host).UI.RawUI.BackgroundColor
 
 [Float]$Starting_Weight = Read-Host -Prompt "What is your starting weight?"
-[Float]$Current_Weight  = Read-Host -Prompt "What is your current weight?"
+[Float]$Current_Weight = Read-Host -Prompt "What is your current weight?"
 
 Clear-Host
 
 if ( $Current_Weight -lt $Starting_Weight) {
-    $percent = [Math]::Round((($Current_Weight/$Starting_Weight)-1)*-1*100, 2)
+    $percent = [Math]::Round((($Current_Weight / $Starting_Weight) - 1) * -1 * 100, 2)
     Write-Host "You have lost $percent% of your body weight." -BackgroundColor Green -ForegroundColor White
 }
 else {
-    $percent = [Math]::Round((($Current_Weight/$Starting_Weight)-1)*100, 2)
+    $percent = [Math]::Round((($Current_Weight / $Starting_Weight) - 1) * 100, 2)
     Write-Host "You have gained $percent% of your body weight." -BackgroundColor Red -ForegroundColor Yellow
 }
 

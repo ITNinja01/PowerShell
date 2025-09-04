@@ -51,20 +51,20 @@ Write-Host $Intro
 
 
 #User input for verse and translation
-$verse         = Read-Host "Enter the verse you want to see (e.g., 'john 3:16', 'jn 3:16', 'matt 25:31-33,46')"
-$translation1  = Read-Host "Enter the first translation you want to use"
+$verse = Read-Host "Enter the verse you want to see (e.g., 'john 3:16', 'jn 3:16', 'matt 25:31-33,46')"
+$translation1 = Read-Host "Enter the first translation you want to use"
 $translations2 = Read-Host "Enter the second translation you want to use"
 
 
 #API call to retrieve the requested verse
 #This is very important the ? and = are required for the URI to to formatted correctly for it to parse the query correctly.
-      $middle                     = "?translation="
+$middle = "?translation="
 
-$API_Call  = "https://bible-api.com/$Verse$middle$translation1"
+$API_Call = "https://bible-api.com/$Verse$middle$translation1"
 $API_Call2 = "https://bible-api.com/$Verse$middle$translations2"
 
 
-$bible_request  = Invoke-RestMethod -Uri $API_Call
+$bible_request = Invoke-RestMethod -Uri $API_Call
 $bible_request2 = Invoke-RestMethod -Uri $API_Call2
 
 # Display the requested verse in a formatted list

@@ -11,7 +11,7 @@ if ($Find_Type -eq 'c') {
     [Float]$Fahrenheit = Read-Host -Prompt "Enter degrees in fahrenheit?"
     
     #Math equation for finding Celsius from Fahrenheit degrees
-    $Converted_Degree =[math]::Round(($Fahrenheit-32)*5/9, 2)
+    $Converted_Degree = [math]::Round(($Fahrenheit - 32) * 5 / 9, 2)
 
     Write-Host "$Fahrenheit degrees fahrenheit is $Converted_Degree degrees in celsius."
 }
@@ -19,7 +19,7 @@ elseif ($Find_Type -eq 'f') {
     [Float]$Celsius = Read-Host -Prompt "Enter degrees in celsius?"
 
     #Math equation for finding Fahrenheit from Celsius degrees
-    $Converted_Degree =[math]::Round(($Celsius*9)/5+32, 2)
+    $Converted_Degree = [math]::Round(($Celsius * 9) / 5 + 32, 2)
 
     Write-Host "$Celsius degrees celsius is $Converted_Degree degrees in fahrenheit. "
 }

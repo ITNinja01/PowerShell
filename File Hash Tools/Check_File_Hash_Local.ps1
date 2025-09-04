@@ -4,14 +4,14 @@ This script simplifies checking the file hash for two files.
 #>
 [CmdletBinding()]
 param (
-[Parameter(Mandatory)]
-$File_Path_1,
-[Parameter(Mandatory)]
-$File_Path_2,
-[Parameter(Mandatory,
-HelpMessage = "Please choose 'SHA1','SHA256','SHA384','SHA512','MD5'.")]
-[ValidateSet('SHA1','SHA256','SHA384','SHA512','MD5')]
-$Hash_Algorithm
+    [Parameter(Mandatory)]
+    $File_Path_1,
+    [Parameter(Mandatory)]
+    $File_Path_2,
+    [Parameter(Mandatory,
+        HelpMessage = "Please choose 'SHA1','SHA256','SHA384','SHA512','MD5'.")]
+    [ValidateSet('SHA1', 'SHA256', 'SHA384', 'SHA512', 'MD5')]
+    $Hash_Algorithm
 )
 
 if ((Test-Path -Path $File_Path_1) -and (Test-Path -Path $File_Path_2)) {

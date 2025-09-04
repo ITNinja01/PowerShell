@@ -1,2 +1,2 @@
 ﻿#This script will create new mail contacts from a csv file
-Import-Csv '$PSScriptRoot\Mail_Contacts.csv'| ForEach-Object {New-MailContact -FirstName $_.First -LastName $_.Last -Name $_.Name -ExternalEmailAddress $_.Email_Address -OrganizationalUnit $_.OU}
+Import-Csv '$PSScriptRoot\Mail_Contacts.csv' | ForEach-Object { New-MailContact -FirstName $_.First -LastName $_.Last -Name $_.Name -ExternalEmailAddress $_.Email_Address -OrganizationalUnit $_.OU }

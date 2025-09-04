@@ -11,19 +11,19 @@ The series or part of the series of the coin to search for. The function will re
 Get-SeriesSearch
 .NOTES
 Developer: ITNinja01
-Date: 07-05-2025   
-Version: 1.0.0
+Date: 09-03-2025   
+Version: 1.0.1
 #>
 
 function Get-SeriesSearch {
-$Series= Read-Host -Prompt "Type in the series or part of the series to search for?"
+    $Series = Read-Host -Prompt "Type in the series or part of the series to search for?"
 
-if ($global:Json_Coins -eq $null) {
-   $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-}
+    if ($global:Json_Coins -eq $null) {
+        $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
+    }
 
-if (Test-Path $global:Json_Coins) {
-    $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-    $Coins.coins | select-object country, title, series, year, grade | Where-Object { $_.Series -like "*$Series*" }
-}
+    if (Test-Path $global:Json_Coins) {
+        $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
+        $Coins.coins | select-object country, title, series, year, grade | Where-Object { $_.Series -like "*$Series*" }
+    }
 }  

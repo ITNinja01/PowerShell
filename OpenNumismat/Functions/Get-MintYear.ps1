@@ -1,4 +1,4 @@
-    <#
+<#
 .SYNOPSIS
 This function retrieves the mint year of coins from a JSON file.
 .DESCRIPTION
@@ -11,27 +11,28 @@ If set to true, the results will be sorted in descending order by year.
 Get-MintYear
 .NOTES
 Developer: ITNinja01
- Date: 06-04-2025   
-Version: 1.0  
+ Date: 09-03-2025   
+Version: 1.0.1
 #>
 
 function Get-MintYear {
-param (
-    [Parameter()]
-    [bool]
-    $Descending = $false
-)
+    param (
+        [Parameter()]
+        [bool]
+        $Descending = $false
+    )
 
-if ($global:Json_Coins -eq $null) {
-   $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-}
+    if ($global:Json_Coins -eq $null) {
+        $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
+    }
 
-if (Test-Path $global:Json_Coins) {
-    $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-}
-if ($Descending) {
-    $Coins.coins | select-object country, title, year, grade | Sort-Object year -Descending
-} else {
-    $Coins.coins | select-object country, title, year, grade | Sort-Object year
-}
+    if (Test-Path $global:Json_Coins) {
+        $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
+    }
+    if ($Descending) {
+        $Coins.coins | select-object country, title, year, grade | Sort-Object year -Descending
+    }
+    else {
+        $Coins.coins | select-object country, title, year, grade | Sort-Object year
+    }
 }  

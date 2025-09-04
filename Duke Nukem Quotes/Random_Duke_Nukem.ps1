@@ -18,22 +18,23 @@ $moduleName = 'powershell-yaml'
 if (-not (Get-Module -ListAvailable -Name $moduleName)) {
     try {
         Install-Module -Name $moduleName -Scope CurrentUser -Force -ErrorAction Stop -Verbose
-    } catch {
+    }
+    catch {
         Write-Error "Could not install module '$moduleName'. Please install it manually."
         exit 1
     }
 }
 Import-Module $moduleName
 
-$Quotes =  ConvertFrom-Yaml (get-content "$PSScriptRoot\Quotes.yaml" -Raw)
+$Quotes = ConvertFrom-Yaml (get-content "$PSScriptRoot\Quotes.yaml" -Raw)
 $The_Quote = Get-Random -InputObject $Quotes
 
-if ($IsWindows -eq $true ){
+if ($IsWindows -eq $true ) {
     $SpeechSynth = New-Object System.Speech.Synthesis.SpeechSynthesizer
     $SpeechSynth.Speak($The_Quote)
 } 
 else {
-# Carriage return
+    # Carriage return
     $crlf = "`r`n"
     Write-Host $crlf $The_Quote $crlf
 }

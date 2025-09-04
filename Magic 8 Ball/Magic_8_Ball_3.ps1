@@ -8,7 +8,8 @@ $moduleName = 'powershell-yaml'
 if (-not (Get-Module -ListAvailable -Name $moduleName)) {
     try {
         Install-Module -Name $moduleName -Scope CurrentUser -Force -ErrorAction Stop -Verbose
-    } catch {
+    }
+    catch {
         Write-Error "Could not install module '$moduleName'. Please install it manually."
         exit 1
     }
