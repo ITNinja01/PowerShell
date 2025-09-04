@@ -11,19 +11,19 @@ The title or part of the title of the coin to search for. The function will retu
 Get-TitleSearch
 .NOTES
 Developer: ITNinja01
-Date: 07-05-2025   
-Version: 1.0.0
+Date: 09-03-2025   
+Version: 1.0.1
 #>
 
 function Get-TitleSearch {
-$Title = Read-Host -Prompt "Type in the title or part of the title to search for?"
+    $Title = Read-Host -Prompt "Type in the title or part of the title to search for?"
 
-if ($global:Json_Coins -eq $null) {
-   $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-}
+    if ($global:Json_Coins -eq $null) {
+        $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
+    }
 
-if (Test-Path $global:Json_Coins) {
-    $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-    $Coins.coins | select-object country, title, year, grade | Where-Object { $_.title -like "*$Title*" }
-}
+    if (Test-Path $global:Json_Coins) {
+        $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
+        $Coins.coins | select-object country, title, year, grade | Where-Object { $_.title -like "*$Title*" }
+    }
 }  

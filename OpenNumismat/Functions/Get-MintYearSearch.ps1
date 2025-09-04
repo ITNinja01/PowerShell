@@ -11,19 +11,19 @@ The year of the coin to search for. The function will return coins that match th
 get-MintYearSearch
 .NOTES
 Developer: ITNinja01
-Date: 07-05-2025   
-Version: 1.0.2
+Date: 09-03-2025   
+Version: 1.0.3
 #>
 
 function Get-MintYearSearch {
-$Year = Read-Host -Prompt "Type in the year or part of the year to search for?"
+    $Year = Read-Host -Prompt "Type in the year or part of the year to search for?"
 
-if ($global:Json_Coins -eq $null) {
-   $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-}
+    if ($global:Json_Coins -eq $null) {
+        $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
+    }
 
-if (Test-Path $global:Json_Coins) {
-    $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-    $Coins.coins | select-object country, title, year, grade | Where-Object { $_.year -like "*$Year*" }
-}
+    if (Test-Path $global:Json_Coins) {
+        $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
+        $Coins.coins | select-object country, title, year, grade | Where-Object { $_.year -like "*$Year*" }
+    }
 }  

@@ -10,10 +10,10 @@ This script is intended for educational and entertainment purposes only. Use wit
 Read-Host "Do you want to have a bad day? (Y/N)" -OutVariable badDay
 
 if ($badDay -eq "Y") {
-# Simulate a bad day by randomly stopping processes
-1..10 | Where-Object {$_.processname -notmatch "powershell" -or "pwsh"}  |ForEach-Object {Get-Process | Get-Random | Stop-Process -Force -Verbose}
-# Simulate a bad day by randomly stopping services
-1..10 | ForEach-Object {Get-Service | Get-Random | Stop-Service -Force -Verbose}
+    # Simulate a bad day by randomly stopping processes
+    1..10 | Where-Object { $_.processname -notmatch "powershell" -or "pwsh" } | ForEach-Object { Get-Process | Get-Random | Stop-Process -Force -Verbose }
+    # Simulate a bad day by randomly stopping services
+    1..10 | ForEach-Object { Get-Service | Get-Random | Stop-Service -Force -Verbose }
 }
 else {
     Write-Host "Good choice! Have a great day!" -ForegroundColor Green

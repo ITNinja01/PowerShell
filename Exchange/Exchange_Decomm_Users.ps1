@@ -1,8 +1,8 @@
 #This script is for decommissioning the Exchange part of a user 
 #Parameter for username being configured.
 param(
-[Parameter(Mandatory=$true)]
-$UserName
+    [Parameter(Mandatory = $true)]
+    $UserName
 )
 #Username is the SAMAccountName of the user being configured
 #Disables Voice Mail 

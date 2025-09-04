@@ -10,7 +10,7 @@ A CSV file containing user details from the specified department.
 .PARAMETER Department
 The department for which to retrieve users. This parameter is mandatory.
 .EXAMPLE
-.\AD_User_By_Department.ps1 -Department "Sales"
+& PowerShell\Active Directory Tools\AD_User_By_Department.ps1 -Department "Sales"
 #>
 
 [CmdletBinding()]
@@ -33,4 +33,4 @@ $Date = Get-Date -Format "MM-dd-yyyy"
 $CSV = "$department $Date.csv"
 
 #Export the users to a CSV file in the user's Downloads folder.
-Get-ADUser -Filter 'department -eq $Department' -Properties office, extensionAttribute7, officephone, title  | select name, office, officephone, UserPrincipalName, extensionAttribute7, title | sort name | Export-Csv -Path $env:USERPROFILE\Downloads\$CSV -Verbose
+Get-ADUser -Filter 'department -eq $Department' -Properties office, extensionAttribute7, officephone, title | Select-Object name, office, officephone, UserPrincipalName, extensionAttribute7, title | Sort-Object name | Export-Csv -Path $env:USERPROFILE\Downloads\$CSV -Verbose

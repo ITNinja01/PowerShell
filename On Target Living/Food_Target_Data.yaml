@@ -1,4 +1,4 @@
-# This file contains the food target data for On Target Living. 
+# This file contains the food target data for On Target Living.
 - Nourishment: White Sugar
   Macronutrient: Carbohydrates
   Target: Poor
@@ -8,7 +8,7 @@
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
-  
+
 - Nourishment: White flour
   Macronutrient: Carbohydrates
   Target: Poor
@@ -27,19 +27,19 @@
 - Nourishment: Cookies
   Macronutrient: Carbohydrates
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Cake 
+- Nourishment: Cake
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: Pie 
+- Nourishment: Pie
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: 
+- Nourishment:
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
@@ -47,14 +47,14 @@
 - Nourishment: Ice Cream
   Macronutrient: Carbohydrates
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: French Fries 
+- Nourishment: French Fries
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: Theater Popcorn 
+- Nourishment: Theater Popcorn
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
@@ -64,7 +64,7 @@
   Target: Poor
   Color: Red
 
-- Nourishment: Processed Cereal 
+- Nourishment: Processed Cereal
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
@@ -74,27 +74,27 @@
   Target: Poor
   Color: Red
 
-- Nourishment: Refined chips 
+- Nourishment: Refined chips
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: Diner pancakes 
+- Nourishment: Diner pancakes
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: Fast Food 
+- Nourishment: Fast Food
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: Fried Food 
+- Nourishment: Fried Food
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
 
-- Nourishment: Junk Food 
+- Nourishment: Junk Food
   Macronutrient: Carbohydrates
   Target: Poor
   Color: Red
@@ -102,129 +102,129 @@
 - Nourishment: Deil Meat
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Hot Dogs
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Pork Sausage
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Bacon 
+- Nourishment: Bacon
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Fast Food Burger 
+- Nourishment: Fast Food Burger
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Frozen fish sticks
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Chicken Nuggets 
+- Nourishment: Chicken Nuggets
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Whey Protein Powder 
+- Nourishment: Whey Protein Powder
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Ice Cream 
+- Nourishment: Ice Cream
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Creatine Supplement 
+- Nourishment: Creatine Supplement
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Egg Substitutes
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Meat/Cheese Substitutes 
+- Nourishment: Meat/Cheese Substitutes
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Bologna 
+- Nourishment: Bologna
   Macronutrient: Proteins
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: 
+- Nourishment:
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Margarine 
+- Nourishment: Margarine
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Shortening 
+- Nourishment: Shortening
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Gravy 
+- Nourishment: Gravy
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Refined Oils
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Refined Peanut Butter
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Vegetable Oil
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
 - Nourishment: Soybean Oil
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Fractionated Oil 
+- Nourishment: Fractionated Oil
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Tempura 
+- Nourishment: Tempura
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Processed Cheese 
+- Nourishment: Processed Cheese
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment: Hydrogenated Oils 
+- Nourishment: Hydrogenated Oils
   Macronutrient: Fats
   Target: Poor
-  Color: Red 
+  Color: Red
 
-- Nourishment:  Sunflower Oil
+- Nourishment: Sunflower Oil
   Macronutrient: Fats
   Target: Fair
   Color: Orange
@@ -329,7 +329,7 @@
   Target: Fair
   Color: Orange
 
-- Nourishment: 
+- Nourishment:
   Macronutrient: Carbohydrates
   Target: Fair
   Color: Orange
@@ -339,12 +339,12 @@
   Target: Fair
   Color: Orange
 
-- Nourishment:  Canned Fruit
+- Nourishment: Canned Fruit
   Macronutrient: Carbohydrates
   Target: Fair
   Color: Orange
 
-- Nourishment: Canned Vegetables 
+- Nourishment: Canned Vegetables
   Macronutrient: Carbohydrates
   Target: Fair
   Color: Orange
@@ -419,7 +419,7 @@
   Target: Fair
   Color: Orange
 
-- Nourishment: White Pasta 
+- Nourishment: White Pasta
   Macronutrient: Carbohydrates
   Target: Fair
   Color: Orange
@@ -539,7 +539,7 @@
   Target: Good
   Color: Yellow
 
-- Nourishment: Canned Tuna/Salmon 
+- Nourishment: Canned Tuna/Salmon
   Macronutrient: Proteins
   Target: Good
   Color: Yellow
@@ -554,7 +554,7 @@
   Target: Good
   Color: Yellow
 
-- Nourishment: Chicken Sausage 
+- Nourishment: Chicken Sausage
   Macronutrient: Proteins
   Target: Good
   Color: Yellow
@@ -644,7 +644,7 @@
   Target: Better
   Color: Light Green
 
-- Nourishment: Bananas 
+- Nourishment: Bananas
   Macronutrient: Carbohydrates
   Target: Better
   Color: Light Green
@@ -794,27 +794,27 @@
   Target: Better
   Color: Light Green
 
-- Nourishment: Almond Oil 
+- Nourishment: Almond Oil
   Macronutrient: Fats
   Target: Better
   Color: Light Green
 
-- Nourishment: Red Palm Oil 
+- Nourishment: Red Palm Oil
   Macronutrient: Fats
   Target: Better
   Color: Light Green
 
-- Nourishment: Macadamia Nuts 
+- Nourishment: Macadamia Nuts
   Macronutrient: Fats
   Target: Better
   Color: Light Green
 
-- Nourishment: Cashews 
+- Nourishment: Cashews
   Macronutrient: Fats
   Target: Better
   Color: Light Green
 
-- Nourishment: Pistachios 
+- Nourishment: Pistachios
   Macronutrient: Fats
   Target: Better
   Color: Light Green
@@ -824,17 +824,17 @@
   Target: Better
   Color: Light Green
 
-- Nourishment: Peanuts 
+- Nourishment: Peanuts
   Macronutrient: Fats
   Target: Better
   Color: Light Green
 
-- Nourishment: Sunflower Seeds 
+- Nourishment: Sunflower Seeds
   Macronutrient: Fats
   Target: Better
   Color: Light Green
 
-- Nourishment: Ghee 
+- Nourishment: Ghee
   Macronutrient: Fats
   Target: Better
   Color: Light Green
@@ -844,7 +844,7 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: 
+- Nourishment:
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
@@ -864,17 +864,17 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Limes 
+- Nourishment: Limes
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Mangoes 
+- Nourishment: Mangoes
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Coconut 
+- Nourishment: Coconut
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
@@ -884,52 +884,52 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Wheatgrass 
+- Nourishment: Wheatgrass
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Leafy Greens 
+- Nourishment: Leafy Greens
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: 
+- Nourishment:
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Brussels Sprouts 
+- Nourishment: Brussels Sprouts
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Root Vegetables 
+- Nourishment: Root Vegetables
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Celery 
+- Nourishment: Celery
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Cabbage 
+- Nourishment: Cabbage
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Figs 
+- Nourishment: Figs
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Onion 
+- Nourishment: Onion
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Asparagus 
+- Nourishment: Asparagus
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
@@ -944,22 +944,22 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Sweet Potatoes 
+- Nourishment: Sweet Potatoes
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Purple Potatoes 
+- Nourishment: Purple Potatoes
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Legumes 
+- Nourishment: Legumes
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Buckwheat 
+- Nourishment: Buckwheat
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
@@ -969,7 +969,7 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Teff 
+- Nourishment: Teff
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
@@ -979,32 +979,32 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Millet 
+- Nourishment: Millet
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Long Grain Rice 
+- Nourishment: Long Grain Rice
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Raw cacao 
+- Nourishment: Raw cacao
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Quinoa 
+- Nourishment: Quinoa
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Garlic 
+- Nourishment: Garlic
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
 
-- Nourishment: Mushrooms 
+- Nourishment: Mushrooms
   Macronutrient: Carbohydrates
   Target: Best
   Color: Dark Green
@@ -1014,17 +1014,17 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Avocado 
+- Nourishment: Avocado
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Virgin Coconut Oil 
+- Nourishment: Virgin Coconut Oil
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Almond Butter 
+- Nourishment: Almond Butter
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
@@ -1034,17 +1034,17 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Olives 
+- Nourishment: Olives
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Pumpkin Seeds 
+- Nourishment: Pumpkin Seeds
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Walnuts 
+- Nourishment: Walnuts
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
@@ -1054,22 +1054,22 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Brazil Nuts 
+- Nourishment: Brazil Nuts
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Almonds 
+- Nourishment: Almonds
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Wild Caught Salmon 
+- Nourishment: Wild Caught Salmon
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
 
-- Nourishment: Coconut butter 
+- Nourishment: Coconut butter
   Macronutrient: Fats
   Target: Best
   Color: Dark Green
@@ -1079,7 +1079,7 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: 
+- Nourishment:
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
@@ -1089,67 +1089,67 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: Wild Caught Fish 
+- Nourishment: Wild Caught Fish
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Wild Game 
+- Nourishment: Wild Game
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Raw nuts/seeds 
+- Nourishment: Raw nuts/seeds
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Hemp Seeds 
+- Nourishment: Hemp Seeds
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Homemade nut/seed milk 
+- Nourishment: Homemade nut/seed milk
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Buckwheat 
+- Nourishment: Buckwheat
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Oat Groats 
+- Nourishment: Oat Groats
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Quinoa 
+- Nourishment: Quinoa
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Teff 
+- Nourishment: Teff
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Broccoli 
+- Nourishment: Broccoli
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Spirulina/Chlorella 
+- Nourishment: Spirulina/Chlorella
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Steel 
+- Nourishment: Steel
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
 
-- Nourishment: Legumes 
+- Nourishment: Legumes
   Macronutrient: Proteins
   Target: Best
   Color: Dark Green
@@ -1194,7 +1194,7 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: 
+- Nourishment:
   Type of food: Sweeteners/Flavors
   Target: Best
   Color: Dark Green
@@ -1249,7 +1249,7 @@
   Target: Best
   Color: Dark Green
 
-- Nourishment: 
+- Nourishment:
   Type of food: Condiments
   Target: Best
   Color: Dark Green
@@ -1419,32 +1419,32 @@
   Target: Poor
   Color: Red
 
-- Nourishment: Whey Protein Shakes 
+- Nourishment: Whey Protein Shakes
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Processed sports drinks 
+- Nourishment: Processed sports drinks
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: energy drinks 
+- Nourishment: energy drinks
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Soda 
+- Nourishment: Soda
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Pop 
+- Nourishment: Pop
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: flavored drink mix 
+- Nourishment: flavored drink mix
   Type of food: Beverages
   Target: Poor
   Color: Red
@@ -1459,112 +1459,112 @@
   Target: Poor
   Color: Red
 
-- Nourishment: Liquor 
+- Nourishment: Liquor
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Beer 
+- Nourishment: Beer
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Processed creamer 
+- Nourishment: Processed creamer
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Hard Cider 
+- Nourishment: Hard Cider
   Type of food: Beverages
   Target: Poor
   Color: Red
 
-- Nourishment: Distilled vinegar  
+- Nourishment: Distilled vinegar
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Refined jam/jelly  
+- Nourishment: Refined jam/jelly
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Processed ketchup  
+- Nourishment: Processed ketchup
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Mayo/Miracle Whip  
+- Nourishment: Mayo/Miracle Whip
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Vegenaise  
+- Nourishment: Vegenaise
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Processed hot/BBQ sauce  
+- Nourishment: Processed hot/BBQ sauce
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Ranch Dressing  
+- Nourishment: Ranch Dressing
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment: Soy Sauce  
+- Nourishment: Soy Sauce
   Type of food: Condiments
   Target: Poor
   Color: Red
 
-- Nourishment:  Candy
+- Nourishment: Candy
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: Xanthan/Guar Gum  
+- Nourishment: Xanthan/Guar Gum
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: Milk/white chocolate 
+- Nourishment: Milk/white chocolate
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: High Fructose Corn Syrup  
+- Nourishment: High Fructose Corn Syrup
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment:  Citric Acid  
+- Nourishment: Citric Acid
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: White Sugar  
+- Nourishment: White Sugar
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: Processed Syrup  
+- Nourishment: Processed Syrup
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: Artificial Sweeteners  
+- Nourishment: Artificial Sweeteners
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: Ionized/refined salt  
+- Nourishment: Ionized/refined salt
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red
 
-- Nourishment: MSG  
+- Nourishment: MSG
   Type of food: Sweeteners/Flavors
   Target: Poor
   Color: Red

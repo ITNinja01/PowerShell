@@ -20,7 +20,7 @@ $New_Year_Folder = get-date -Format yyyy
 New-Item -ItemType directory  "$Folder_Path\$New_Year_Folder" -Verbose
 
 #Arry for each month
-$Months =@(
+$Months = @(
     '01',
     '02',
     '03',

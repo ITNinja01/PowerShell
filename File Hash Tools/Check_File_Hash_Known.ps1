@@ -4,13 +4,13 @@ This script simplifies checking the file hash if the file hash is already known.
 #>
 [CmdletBinding()]
 param (
-[Parameter(Mandatory)]
-$File_Path,
-[Parameter(Mandatory)]
-$Provided_Hash,
-[Parameter(Mandatory)]
-[ValidateSet('SHA1','SHA256','SHA384','SHA512','MD5')]
-$Hash_Algorithm
+    [Parameter(Mandatory)]
+    $File_Path,
+    [Parameter(Mandatory)]
+    $Provided_Hash,
+    [Parameter(Mandatory)]
+    [ValidateSet('SHA1', 'SHA256', 'SHA384', 'SHA512', 'MD5')]
+    $Hash_Algorithm
 )
 
 if (Test-Path -Path $File_Path) {

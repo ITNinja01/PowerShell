@@ -11,23 +11,23 @@ The name of the country to filter the coins.
 Get-CountryByName -name "United States"
 .NOTES
 Developer: ITNinja01
-Date: 07-05-2025   
-Version: 1.0.3
+Date: 09-03-2025   
+Version: 1.0.4
 #>
 
 function Get-CountryByName {
-[CmdletBinding()]
-param(
-[Parameter(Mandatory)]
-    $Name
-)    
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        $Name
+    )    
 
-if ($global:Json_Coins -eq $null) {
-   $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-}
+    if ($global:Json_Coins -eq $null) {
+        $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
+    }
 
-if (Test-Path $global:Json_Coins) {
-    $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-    $Coins.coins | select-object country, title, year, grade | Where-Object { $_.country -eq "$Name" }
-}
+    if (Test-Path $global:Json_Coins) {
+        $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
+        $Coins.coins | select-object country, title, year, grade | Where-Object { $_.country -eq "$Name" }
+    }
 }  

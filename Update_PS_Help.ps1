@@ -15,23 +15,23 @@ $Write_Info = {
 
 if ($IsWindows -eq $true) {
     #Paths where help files are stored
-$Local_Help_Path    = "$env:USERPROFILE\Documents\PowerShell\Help"
-$OneDrive_Help_Path = "$env:OneDrive\Documents\PowerShell\Help"
+    $Local_Help_Path = "$env:USERPROFILE\Documents\PowerShell\Help"
+    $OneDrive_Help_Path = "$env:OneDrive\Documents\PowerShell\Help"
 
-if (Test-Path $Local_Help_Path) {
-    Get-ChildItem $Local_Help_Path -Recurse | Where-Object {$_.LastWriteTime -ge ((get-date).AddHours(-8))}
-    & $Write_Info
-}
-if (Test-Path $OneDrive_Help_Path) {
-    Get-ChildItem $OneDrive_Help_Path -Recurse | Where-Object {$_.LastWriteTime -ge ((get-date).AddHours(-8))}
-    & $Write_Info
-}
+    if (Test-Path $Local_Help_Path) {
+        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        & $Write_Info
+    }
+    if (Test-Path $OneDrive_Help_Path) {
+        Get-ChildItem $OneDrive_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        & $Write_Info
+    }
 }
 else {
-#Paths where help files are stored in Linux or Mac.
-$Local_Help_Path = "/home/$env:USER/.local/share/powershell/Help"
+    #Paths where help files are stored in Linux or Mac.
+    $Local_Help_Path = "/home/$env:USER/.local/share/powershell/Help"
     if (Test-Path $Local_Help_Path) {
-        Get-ChildItem $Local_Help_Path -Recurse | Where-Object {$_.LastWriteTime -ge ((get-date).AddHours(-8))}
+        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
         & $Write_Info
     }
 }

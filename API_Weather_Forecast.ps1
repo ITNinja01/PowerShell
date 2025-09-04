@@ -11,11 +11,11 @@ Ipinfo.io, Weather.Gov API, PowerShell
 $response = Invoke-RestMethod -Uri "http://ipinfo.io/json"
 
 #Extracts city, country, latitude and longitude from the response
-$location  = $response.loc -split ","
-$latitude  = $location[0]
+$location = $response.loc -split ","
+$latitude = $location[0]
 $longitude = $location[1]
-$City      = $response.city
-$Country   = $response.country
+$City = $response.city
+$Country = $response.country
 Write-Host "$City, $Country Forecast"
 
 #Creating variables to access weather

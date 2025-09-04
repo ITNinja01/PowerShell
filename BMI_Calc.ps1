@@ -20,7 +20,7 @@ if ($bmi -lt 18.5) {
     Write-Host 'You are underweight.' -BackgroundColor Blue -ForegroundColor Green
 }
 elseif ($bmi -ge 18.5 -and $bmi -lt 25) {
-   Write-Host 'You are at a normal weight!' -BackgroundColor Yellow -ForegroundColor Blue
+    Write-Host 'You are at a normal weight!' -BackgroundColor Yellow -ForegroundColor Blue
 }
 elseif ($bmi -ge 25 -and $bmi -lt 30) {
     Write-Host 'You are overweight.' -BackgroundColor Blue -ForegroundColor Magenta

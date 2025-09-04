@@ -16,7 +16,7 @@ elseif ($User_Input -eq 's') {
 }
 else {
     Write-Host 'Please only choose the first letter for (R)ock, (P)aper or (S)cissors.'
-#The next line is needed to restart the script if the user does not choose the correct letters for the game.
+    #The next line is needed to restart the script if the user does not choose the correct letters for the game.
     & "$PSScriptRoot\Rock_Paper_Scissors.ps1"
 }
 
@@ -24,7 +24,7 @@ $CPU_Choice = Get-Random 'rock', 'paper', 'scissors'
 
 if ($User_Choice -eq $CPU_Choice) {
     Write-Host "There is a tie between $User_Choice and $CPU_Choice!" 
-#The next line is needed to restart the script if the game is a tie.
+    #The next line is needed to restart the script if the game is a tie.
     & "$PSScriptRoot\Rock_Paper_Scissors.ps1"
 } 
 

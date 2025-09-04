@@ -10,17 +10,17 @@ OpenNumismat
 Get-ThreeRandomCoins
  .NOTES
 Developer: ITNinja01
-Date: 06-04-2025   
-Version: 1.0.1
+Date: 09-03-2025   
+Version: 1.0.2
 #>
 
 function Get-ThreeRandomCoins {
-if ($global:Json_Coins -eq $null) {
-   $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-}
+    if ($global:Json_Coins -eq $null) {
+        $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
+    }
 
-if (Test-Path $global:Json_Coins) {
-    $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
-    $Coins.coins | select-object country, title, year, grade | get-random -Count 3
-}
+    if (Test-Path $global:Json_Coins) {
+        $Coins = Get-Content -Path  $Json_Coins -raw | ConvertFrom-Json
+        $Coins.coins | select-object country, title, year, grade | get-random -Count 3
+    }
 }  

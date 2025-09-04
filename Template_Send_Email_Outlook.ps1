@@ -13,11 +13,11 @@ PowerShell, Outlook, ComObject - Outlook.Application
 This script is a template of sending an email to somebody using PowerShell and the ComObject - Outlook.Application using Outlook. 
 #>
 
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory)]
-        $ParameterName
-    )
+[CmdletBinding()]
+param (
+    [Parameter(Mandatory)]
+    $ParameterName
+)
 
 #Outlook must be running for this script to work.
 try {
