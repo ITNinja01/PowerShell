@@ -8,7 +8,7 @@ Percentage of Windows 11 computers in your environment
 #>
 
 [int]$Windows11_Computers = Read-Host "Enter the number of the Windows 11 computers in your environment?"
-[int]$Windows10_Computers = Read-Host "Enter the number of the Windows 11 computers in your environment?"
+[int]$Windows10_Computers = Read-Host "Enter the number of the Windows 10 computers in your environment?"
 [int]$All_Computers = $Windows11_Computers + $Windows10_Computers
 
 $Percent_Completed = [Math]::Round(($Windows11_Computers / $All_Computers) * 100, 2)
