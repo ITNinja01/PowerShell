@@ -7,10 +7,10 @@ I wanted to know what help files were updated and when. This script updates the 
 I decided on eight hours as the time frame to check for updated help files. This is because that is a typical workday and I wanted to see if any help files were updated during that time.
 #>
 
-Update-help -UICulture ENG   -Verbose -Force
+Update-help -UICulture ENG -Verbose -force
 
 $Write_Info = {
-    Write-Host "These help files updated successfully." -ForegroundColor Green
+    Write-Host "$HelpFile_Count help files updated successfully." -ForegroundColor Green
 }
 
 if ($IsWindows -eq $true) {
@@ -19,11 +19,13 @@ if ($IsWindows -eq $true) {
     $OneDrive_Help_Path = "$env:OneDrive\Documents\PowerShell\Help"
 
     if (Test-Path $Local_Help_Path) {
-        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }   
+        $HelpFile_Count = Get-ChildItem $Local_Help_Path -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
         & $Write_Info
     }
     if (Test-Path $OneDrive_Help_Path) {
         Get-ChildItem $OneDrive_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+       $HelpFile_Count = Get-ChildItem $OneDrive_Help_Path -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
         & $Write_Info
     }
 }
@@ -32,6 +34,7 @@ else {
     $Local_Help_Path = "/home/$env:USER/.local/share/powershell/Help"
     if (Test-Path $Local_Help_Path) {
         Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        $HelpFile_Count = Get-ChildItem $Local_Help_Path -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
         & $Write_Info
     }
 }
