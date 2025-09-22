@@ -7,7 +7,7 @@ I wanted to know what help files were updated and when. This script updates the 
 I decided on eight hours as the time frame to check for updated help files. This is because that is a typical workday and I wanted to see if any help files were updated during that time.
 #>
 
-Update-help -UICulture ENG -Verbose -force
+Update-help -UICulture ENG -Verbose
 
 $Write_Info = {
     Write-Host "$HelpFile_Count help files updated successfully." -ForegroundColor Green
