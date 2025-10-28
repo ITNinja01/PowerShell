@@ -1,3 +1,4 @@
+function Get-Grade {
 <#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the coin's grade.
@@ -11,11 +12,10 @@ The grade of the coin to search for. The function will return coins that match t
 Get-Grade -Grade "01"
 .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 1.0.1
+Date: 10-28-2025   
+Version: 1.0.2
 #>
 
-function Get-Grade {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]

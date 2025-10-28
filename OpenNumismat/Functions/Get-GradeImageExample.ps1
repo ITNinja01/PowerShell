@@ -1,3 +1,4 @@
+function Get-GradeImageExample {
 <#
 .SYNOPSIS
 Retrieves and displays an example image for the specified coin grade.
@@ -11,11 +12,10 @@ Specifies the grade of the coin. Valid values are "01", "02", "03", "04", "06", 
 Get-GradeImageExample -Grade "65"
 .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 1.0.1
+Date: 10-28-2025   
+Version: 1.0.2
 #>
 
-function Get-GradeImageExample {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]

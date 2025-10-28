@@ -1,3 +1,4 @@
+function Get-TitleSearch {
 <#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the coin's title.
@@ -11,11 +12,10 @@ The title or part of the title of the coin to search for. The function will retu
 Get-TitleSearch
 .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 1.0.1
+Date: 10-28-2025   
+Version: 1.0.2
 #>
 
-function Get-TitleSearch {
     $Title = Read-Host -Prompt "Type in the title or part of the title to search for?"
 
     if ($global:Json_Coins -eq $null) {

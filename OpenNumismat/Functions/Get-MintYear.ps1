@@ -1,3 +1,4 @@
+function Get-MintYear {
 <#
 .SYNOPSIS
 This function retrieves the mint year of coins from a JSON file.
@@ -11,11 +12,10 @@ If set to true, the results will be sorted in descending order by year.
 Get-MintYear
 .NOTES
 Developer: ITNinja01
- Date: 09-03-2025   
-Version: 1.0.1
+Date: 10-28-2025   
+Version: 1.0.2
 #>
 
-function Get-MintYear {
     param (
         [Parameter()]
         [bool]

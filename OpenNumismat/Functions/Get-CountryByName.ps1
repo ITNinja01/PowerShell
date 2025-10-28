@@ -1,3 +1,4 @@
+function Get-CountryByName {
 <#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the country's name.
@@ -11,11 +12,10 @@ The name of the country to filter the coins.
 Get-CountryByName -name "United States"
 .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 1.0.4
+Date: 10-28-2025   
+Version: 1.0.5
 #>
 
-function Get-CountryByName {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]

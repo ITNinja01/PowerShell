@@ -1,3 +1,4 @@
+function Get-ThreeRandomCoins {
 <#
 .SYNOPSIS
 This function retrieves three random coins from a JSON file exported from Open Numismat.
@@ -10,11 +11,10 @@ OpenNumismat
 Get-ThreeRandomCoins
  .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 1.0.2
+Date: 10-28-2025   
+Version: 1.0.3
 #>
 
-function Get-ThreeRandomCoins {
     if ($global:Json_Coins -eq $null) {
         $global:Json_Coins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
     }

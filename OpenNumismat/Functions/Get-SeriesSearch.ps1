@@ -1,3 +1,4 @@
+function Get-SeriesSearch {
 <#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the coin's series.
@@ -11,11 +12,9 @@ The series or part of the series of the coin to search for. The function will re
 Get-SeriesSearch
 .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 1.0.1
+Date: 10-28-2025   
+Version: 1.0.2
 #>
-
-function Get-SeriesSearch {
     $Series = Read-Host -Prompt "Type in the series or part of the series to search for?"
 
     if ($global:Json_Coins -eq $null) {

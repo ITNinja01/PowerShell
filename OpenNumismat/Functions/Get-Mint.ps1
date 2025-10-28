@@ -1,3 +1,4 @@
+function Get-Mint {
 <#
 .SYNOPSIS
 This function retrieves coins from a JSON file based on the coin's mint.
@@ -11,11 +12,10 @@ The mint of the coin to search for. The function will return coins that match th
 Get-Mint -Mint "San Francisco"
 .NOTES
 Developer: ITNinja01
-Date: 09-03-2025   
-Version: 2.0.1
+Date: 10-28-2025   
+Version: 2.0.2
 #>
 
-function Get-Mint {
     $Mint = Read-Host -Prompt "Type in the mint or part of the mint to search for?"
 
     if ($global:Json_Coins -eq $null) {
