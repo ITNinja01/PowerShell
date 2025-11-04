@@ -12,6 +12,7 @@ A CSV file named IP_Scan_Results.csv in the user's Downloads folder containing t
 .FUNCTIONALITY
 Network connectivity testing
 #>
+
 $IPAddresses = Import-Csv $PSScriptRoot\IPs.csv
 
 $Count = $IPAddresses.Count
@@ -22,9 +23,15 @@ $IPAddresses | ForEach-Object {
     $percent = [math]::Round(($i / $Count) * 100, 2)
     Write-Progress -Activity "Scanning IP Addresses" -Status "Processing IP $i of $Count, $percent complete"
 
+    # Need to convert to string to avoid duplicate information int terminal.    
     $CurrentIPAddress = $_.IPAddress | Out-String
     Write-Output "Trying to contact to $CurrentIPAddress."
+
+    # Add -Quiet to return boolean value for if the IP is online or not.   
     if (test-connection $_.IPAddress -count 1 -Quiet) {
+
+        # If online, create PS custom object with status online and export to CSV.        
+       
         $Output = [PSCustomObject]@{
             IPAddress = $_.IPAddress
             Status    = "Online"
@@ -33,4 +40,6 @@ $IPAddresses | ForEach-Object {
         $Output | Export-Csv -Path $Env:USERPROFILE\Downloads\IP_Scan_Results.csv -NoTypeInformation -Append                     
     }    
 }
+
+Write-Output "IP scan complete. Results saved to IP_Scan_Results.csv in your Downloads folder."
 Get-Content $Env:USERPROFILE\Downloads\IP_Scan_Results.csv
