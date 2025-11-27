@@ -1,4 +1,4 @@
-function Get-Dev.To {
+function Get-WhatEver  {
 <#
 .SYNOPSIS
 
@@ -12,9 +12,14 @@ PowerShell, Forem.com having their newest articles in a JSON format (API)
 IT Professionals
 #>
 
+if (-not (Test-Connection forem.com -Count 1 -Quiet)) {
+    Write-Error "forem.com is not reachable. Please check your internet connection."
+    Exit 1
+}
+
 Write-Host "Latest news from  🧑‍💻"
 
-##carriage return to make it easier to read in the terminal
+#Carriage return to make it easier to read in the terminal
 $crlf = [Environment]::NewLine
 
 $Articles = Invoke-RestMethod -Uri ""

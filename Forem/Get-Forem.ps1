@@ -1,23 +1,23 @@
-function Get-Dev.To {
+function Get-Forem  {
 <#
 .SYNOPSIS
-This script will display news from Dev.To (dev.to) on the terminal using their JSON format (API) webpage.
+This script will display news from Forem (forem.com) on the terminal using their JSON format (API) webpage.
 .DESCRIPTION
-This script fetches the latest articles from Dev.To (dev.to) and displays the title, published date, and URL in the terminal.
+This script fetches the latest articles from Forem (forem.com) and displays the title, published date, and URL in the terminal.
 .FUNCTIONALITY
 API Calls, JSON, Terminal Output
 .COMPONENT
 PowerShell, Forem.com having their newest articles in a JSON format (API)
 .ROLE
-IT Professionals, Developers
+IT Professionals
 #>
 
-Write-Host "Latest news from Dev.To 🧑‍💻"
+Write-Host "Latest news from Forem 🌐"
 
-##carriage return to make it easier to read in the terminal
+#Carriage return to make it easier to read in the terminal
 $crlf = [Environment]::NewLine
 
-$Articles = Invoke-RestMethod -Uri "https://dev.to/api/articles"
+$Articles = Invoke-RestMethod -Uri "https://forem.com/api/articles"
 
 #Sorts articles by a date. Important since PowerShell will display them in the terminal at random.
 $sortedArticles = $Articles | Sort-Object -Property published_timestamp 
