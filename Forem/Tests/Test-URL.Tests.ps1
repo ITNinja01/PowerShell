@@ -21,6 +21,8 @@ $URLs = @('core.forem.com',
         )
 
 Describe "Test-URL" {
+    Context "URL must be reachable for script to work properly" {
+    }
     It "Returns findings for reachable URL" -TestCases ($URLs | ForEach-Object { @{ TargetName = $_ } }) {
         param($TargetName)
         Test-URL -TargetName $TargetName | Should -Be $true
