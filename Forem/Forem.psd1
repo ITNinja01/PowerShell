@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-# RootModule = ''
+# RootModule = 'Forem.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.0.1'
@@ -21,19 +21,19 @@ ModuleVersion = '0.0.1'
 GUID = '42b70754-dc8b-4d82-8e16-e8c0a00f1576'
 
 # Author of this module
-Author = 'dwill'
+Author = 'ITNinja01'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'ITNinja01'
 
 # Copyright statement for this module
-Copyright = '(c) dwill. All rights reserved.'
+Copyright = 'ITNinja01'
 
 # Description of the functionality provided by this module
 # Description = ''
 
 # Minimum version of the PowerShell engine required by this module
-# PowerShellVersion = ''
+# PowerShellVersion = '5.1'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
@@ -69,7 +69,7 @@ Copyright = '(c) dwill. All rights reserved.'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @()
+FunctionsToExport = @(*)
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -87,7 +87,7 @@ AliasesToExport = @()
 # ModuleList = @()
 
 # List of all files packaged with this module
-# FileList = @()
+# FileList = @(Forem.psm1)
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
 PrivateData = @{
@@ -95,7 +95,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        # Tags = @(IT Professionals, News, Forem, Dev.To)
 
         # A URL to the license for this module.
         # LicenseUri = ''
