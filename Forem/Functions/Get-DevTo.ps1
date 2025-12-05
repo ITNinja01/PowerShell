@@ -13,10 +13,10 @@ PowerShell, Forem.com having their newest articles in a JSON format (API)
 IT Professionals, Developers
 #>
 
-if (-not (Test-Connection dev.to -Count 1 -Quiet)) {
-    Write-Error "dev.to is not reachable. Please check your internet connection."
-    Exit 1
-}
+    if (-not (Test-Connection dev.to -Count 1 -Quiet)) {
+        Write-Error "dev.to is not reachable. Please check your internet connection."
+        Exit 1
+    }
 
     Write-Host "Latest news from DEV Community 🧑‍💻"
 

@@ -3,22 +3,22 @@ BeforeAll {
 }
 
 $URLs = @('core.forem.com',
-        'crypto.forem.com',
-        'dev.to',
-        'design.forem.com',
-        'forem.com',
-        'gg.forem.com',
-        'golf.forem.com',
-        'hmpljs.forem.com',
-        'maker.forem.com',
-        'music.forem.com',
-        'open.forem.com',
-        'parenting.forem.com',
-        'popcorn.forem.com',
-        'scale.forem.com',
-        'vibe.forem.com',
-        'zeroday.forem.com'
-        )
+    'crypto.forem.com',
+    'dev.to',
+    'design.forem.com',
+    'forem.com',
+    'gg.forem.com',
+    'golf.forem.com',
+    'hmpljs.forem.com',
+    'maker.forem.com',
+    'music.forem.com',
+    'open.forem.com',
+    'parenting.forem.com',
+    'popcorn.forem.com',
+    'scale.forem.com',
+    'vibe.forem.com',
+    'zeroday.forem.com'
+)
 
 Describe "Test-URL" {
     Context "URL must be reachable for script to work properly" {

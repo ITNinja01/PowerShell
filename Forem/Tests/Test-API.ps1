@@ -1,11 +1,11 @@
 function Test-API {
-    param (
+  param (
     [Parameter(Mandatory)]
     [string]$APIURI
-    )
+  )
     
-  $Articles =   Invoke-RestMethod -Uri $APIURI
-$Count = $Articles.Length
+  $Articles = Invoke-RestMethod -Uri $APIURI
+  $Count = $Articles.Length
 
-return $Count
+  return $Count
 }

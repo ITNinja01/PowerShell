@@ -13,10 +13,10 @@ PowerShell, Forem.com forums having their newest articles in a JSON format (API)
  IT Professionals, Developers, Gamers
 #>
 
-if (-not (Test-Connection gg.forem.com -Count 1-Quiet )) {
-    Write-Error "gg.forem.com is not reachable. Plese check your internet connection."
-    Exit 1
-}
+    if (-not (Test-Connection gg.forem.com -Count 1-Quiet )) {
+        Write-Error "gg.forem.com is not reachable. Plese check your internet connection."
+        Exit 1
+    }
 
     Write-Host "Latest news from Gamers Forem 🎮"
 

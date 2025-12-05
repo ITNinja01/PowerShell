@@ -1,5 +1,5 @@
-function Get-Security  {
-<#
+function Get-Security {
+    <#
 .SYNOPSIS
 A script to get latest articles from Security Forem.
 .DESCRIPTION
@@ -13,26 +13,26 @@ PowerShell, Forem.com having their newest articles in a JSON format (API)
 IT Professionals, Security Enthusiasts
 #>
 
-if (-not (Test-Connection zeroday.forem.com -Count 1 -Quiet)) {
-    Write-Error "zeroday.forem.com is not reachable. Please check your internet connection."
-    Exit 1
-}
+    if (-not (Test-Connection zeroday.forem.com -Count 1 -Quiet)) {
+        Write-Error "zeroday.forem.com is not reachable. Please check your internet connection."
+        Exit 1
+    }
 
-Write-Host "Latest news from Security Forem 🧑‍💻"
+    Write-Host "Latest news from Security Forem 🧑‍💻"
 
-#Carriage return to make it easier to read in the terminal
-$crlf = [Environment]::NewLine
+    #Carriage return to make it easier to read in the terminal
+    $crlf = [Environment]::NewLine
 
-$Articles = Invoke-RestMethod -Uri 'https://zeroday.forem.com/api/articles'
+    $Articles = Invoke-RestMethod -Uri 'https://zeroday.forem.com/api/articles'
 
-#Sorts articles by a date. Important since PowerShell will display them in the terminal at random.
-$SortedArticles = $Articles | Sort-Object -Property published_timestamp 
+    #Sorts articles by a date. Important since PowerShell will display them in the terminal at random.
+    $SortedArticles = $Articles | Sort-Object -Property published_timestamp 
 
-#Tons of information is given. However I only need the title, the published date, and the URl; if I want to read the full article.
-$SortedArticles | ForEach-Object {
-    $crlf
-    $_.title
-    $_.published_timestamp  
-    $_.url
-}   
+    #Tons of information is given. However I only need the title, the published date, and the URl; if I want to read the full article.
+    $SortedArticles | ForEach-Object {
+        $crlf
+        $_.title
+        $_.published_timestamp  
+        $_.url
+    }   
 }
