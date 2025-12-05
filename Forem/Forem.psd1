@@ -77,7 +77,7 @@
         'Get-Forem',
         'Get-Gamers',
         'Get-Golf',
-        'Get-HMPL-JS',
+        'Get-HMPLJS',
         'Get-Maker',
         'Get-Music',
         'Get-OpenForem',
@@ -103,7 +103,7 @@
     # ModuleList = @()
 
     # List of all files packaged with this module
-     FileList = Forem.psm1
+     FileList = 'Forem.psm1'
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
     PrivateData       = @{

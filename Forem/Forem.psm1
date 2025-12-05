@@ -14,8 +14,8 @@ Export-ModuleMember -Function Get-Forem
 Export-ModuleMember -Function Get-Gamers
 . $PSScriptRoot\Functions\Get-Golf.ps1
 Export-ModuleMember -Function Get-Golf
-. $PSScriptRoot\Functions\Get-HMPL-JS .ps1
-Export-ModuleMember -Function Get-HMPL-JS 
+. $PSScriptRoot\Functions\Get-HMPLJS.ps1
+Export-ModuleMember -Function Get-HMPLJS 
 . $PSScriptRoot\Functions\Get-Maker.ps1
 Export-ModuleMember -Function Get-Maker
 . $PSScriptRoot\Functions\Get-Music.ps1
