@@ -10,6 +10,10 @@ function Get-Music {
     'PowerShell, Forem.com having their newest articles in a JSON format (API)'
     .ROLE
     IT Professionals, Music Enthusiasts
+    .NOTES
+    Developer: ITNinja01
+    Date: 12-05-2025   
+    Version: 0.0.1
     #>
 
     if (-not (Test-Connection music.forem.com -Count 1 -Quiet)) {

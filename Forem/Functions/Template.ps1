@@ -11,6 +11,10 @@ API Calls, JSON, Terminal Output
 PowerShell, Forem.com having their newest articles in a JSON format (API)
 .ROLE
 IT Professionals
+.NOTES
+Developer: ITNinja01
+Date:    
+Version: 0.0.1
 #>
 
     if (-not (Test-Connection forem.com -Count 1 -Quiet)) {

@@ -11,6 +11,10 @@ API Calls, JSON, Terminal Output
 PowerShell, Forem.com having their newest articles in a JSON format (API)
 .ROLE
 IT Professionals, Parents
+.NOTES
+Developer: ITNinja01
+Date: 12-05-2025   
+Version: 0.0.1
 #>
 
     if (-not (Test-Connection parenting.forem.com -Count 1 -Quiet)) {
