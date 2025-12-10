@@ -5,6 +5,7 @@ BeforeAll {
 $URLs = @('core.forem.com',
     'crypto.forem.com',
     'dev.to',
+    'dumb.dev.to',
     'design.forem.com',
     'forem.com',
     'gg.forem.com',
