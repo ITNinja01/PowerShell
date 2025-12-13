@@ -1,4 +1,12 @@
-$ModulePath = Read-Host -Prompt "Enter the full path of the module you want to copy"
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory)]
+    $RootFolderPath,
+    [Parameter(Mandatory)]
+    $ModuleName
+)
+
+$ModulePath = Join-Path -Path $RootFolderPath -ChildPath $ModuleName
 
 if (-not (Test-Path $ModulePath)) {
     Write-Error "$ModulePath does not exist. Please provide a valid path."
@@ -6,7 +14,7 @@ if (-not (Test-Path $ModulePath)) {
 }
 
 $ImportResult = {
-    Import-Module -Name $ModulePath -Force -Verbose
+    Import-Module -Name $ModuleName -Force -Verbose
 }
 
 if ($IsWindows -eq $true) {
@@ -19,10 +27,9 @@ if ($IsWindows -eq $true) {
     }
     if (Test-Path $OneDrive_Module_Path) {
         & Copy-Item -Path $ModulePath -Destination $OneDrive_Module_Path -Recurse -Force -Verbose
-        $ImportResult 
+      & $ImportResult 
     }
 }
-
 else {
     #Paths where help files are stored in Linux or Mac.
     $LocalModulePath = "/home/$env:USER/.local/share/powershell/Modules"
