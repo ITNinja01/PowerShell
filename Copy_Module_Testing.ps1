@@ -1,3 +1,20 @@
+<#
+.SYNOPSIS
+Copies a PowerShell module to the user's local and OneDrive module directories and imports it.
+.DESCRIPTION
+This script copies a specified PowerShell module from a given root folder path to the user's local PowerShell Modules directory and, if applicable, to the OneDrive Modules directory. After copying, it imports the module into the current PowerShell session.
+.PARAMETER RootFolderPath
+The root folder path where the module is located.
+.PARAMETER ModuleName
+The name of the module to be copied and imported.
+.FUNCTIONALITY 
+I got tired of manually copying my PowerShell modules to my local and OneDrive module directories every time I made changes. This script automates that process and ensures the module is imported into the current session.
+.ROLE
+IT Administrator, Powershell Developer
+.NOTES
+This script has been tested on Windows and Linux.
+#>
+
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)]
@@ -6,6 +23,7 @@ param(
     $ModuleName
 )
 
+# Construct the full module path
 $ModulePath = Join-Path -Path $RootFolderPath -ChildPath $ModuleName
 
 if (-not (Test-Path $ModulePath)) {
@@ -13,6 +31,7 @@ if (-not (Test-Path $ModulePath)) {
     exit 1
 }
 
+# Script block to import the module after copying. So I don't have to repeat myself.
 $ImportResult = {
     Import-Module -Name $ModuleName -Force -Verbose
 }
