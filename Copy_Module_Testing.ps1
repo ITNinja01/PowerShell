@@ -17,7 +17,8 @@ This script has been tested on Windows and Linux.
 
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory)]
+    [Parameter(Mandatory, 
+        HelpMessage = "Specify the root folder path where the module test folder is located.")]
     $RootFolderPath,
     [Parameter(Mandatory)]
     $ModuleName
@@ -46,7 +47,7 @@ if ($IsWindows -eq $true) {
     }
     if (Test-Path $OneDrive_Module_Path) {
         & Copy-Item -Path $ModulePath -Destination $OneDrive_Module_Path -Recurse -Force -Verbose
-      & $ImportResult 
+        & $ImportResult 
     }
 }
 else {
