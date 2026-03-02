@@ -27,8 +27,6 @@ param(
 # Construct the full module path
 $ModulePath = Join-Path -Path $RootFolderPath -ChildPath $ModuleName
 
-$ModuleFiles = Get-ChildItem -Path $ModulePath -Recurse -Exclude '.git', '.vscode' -Force
-
 if (-not (Test-Path $ModulePath)) {
     Write-Error "$ModulePath does not exist. Please provide a valid path."
     exit 1
@@ -44,17 +42,18 @@ if ($IsWindows -eq $true) {
     $LocalModulePath = "$env:USERPROFILE\Documents\PowerShell\Modules"
     $OneDrive_Module_Path = "$env:OneDrive\Documents\PowerShell\Modules"
     if (Test-Path $LocalModulePath) {
-        Copy-Item -Path $ModuleFiles -Destination $LocalModulePath\$ModuleName -Recurse -Force -Verbose
+        Robocopy $ModuleName $LocalModulePath\$ModuleName 
+        Copy-Item -Path $ModulePath -Destination $LocalModulePath\$ModuleName -Recurse -Force -Verbose
         & $ImportResult 
     }
     if (Test-Path $OneDrive_Module_Path) {
-        Copy-Item -Path $ModuleFiles -Destination $OneDrive_Module_Path\$ModuleName -Recurse -Force -Verbose
+        Copy-Item -Path "$ModulePath\*" -Destination $OneDrive_Module_Path\$ModuleName  -Recurse -Force -Verbose -Exclude '.git' 
         & $ImportResult 
     }
 }
 else {
     #Paths where help files are stored in Linux or Mac.
     $LocalModulePath = "/home/$env:USER/.local/share/powershell/Modules"
-    Copy-Item -Path $ModuleFiles -Destination $LocalModulePath/$ModuleName -Recurse -Force -Verbose  
+    Copy-Item -Path $ModulePath -Destination $LocalModulePath/$ModuleName -Recurse -Force -Verbose  
     & $ImportResult 
 }
