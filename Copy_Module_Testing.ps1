@@ -40,19 +40,23 @@ $ImportResult = {
 if ($IsWindows -eq $true) {
     #Paths where module files are stored
     $LocalModulePath = "$env:USERPROFILE\Documents\PowerShell\Modules"
-    $OneDrive_Module_Path = "$env:OneDrive\Documents\PowerShell\Modules"
+    $OneDriveModulePath = "$env:OneDrive\Documents\PowerShell\Modules"
     if (Test-Path $LocalModulePath) {
-        Copy-Item -Path $ModulePath -Destination $LocalModulePath -Recurse -Force -Verbose
+        Robocopy $ModulePath $LocalModulePath\$ModuleName /E /MT:8 /XD $ModulePath\.git $ModulePath\.vscode 
         & $ImportResult 
     }
-    if (Test-Path $OneDrive_Module_Path) {
-        & Copy-Item -Path $ModulePath -Destination $OneDrive_Module_Path -Recurse -Force -Verbose
+    if (Test-Path $OneDriveModulePath) {
+        Robocopy $ModulePath $OneDriveModulePath\$ModuleName /E /MT:8 /XD $ModulePath\.git $ModulePath\.vscode 
         & $ImportResult 
     }
 }
 else {
     #Paths where help files are stored in Linux or Mac.
     $LocalModulePath = "/home/$env:USER/.local/share/powershell/Modules"
-    Copy-Item -Path $ModulePath -Destination $LocalModulePath -Recurse -Force -Verbose  
+    Copy-Item -Path $ModulePath -Destination $LocalModulePath/$ModuleName -Recurse -Force -Verbose 
+    
+    # Remove .git and .vscode folders if they exist in the destination path had to use Remove-Item instead of Robocopy to exclude the folders. Robocopy doesn't work on Linux or Mac.
+    Remove-Item -Path $LocalModulePath/$ModuleName/.git -Recurse -Force -Verbose
+    Remove-Item -Path $LocalModulePath/$ModuleName/.vscode -Recurse -Force -Verbose 
     & $ImportResult 
 }
