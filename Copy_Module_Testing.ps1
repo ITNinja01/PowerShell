@@ -1,0 +1,62 @@
+<#
+.SYNOPSIS
+Copies a PowerShell module to the user's local and OneDrive module directories and imports it.
+.DESCRIPTION
+This script copies a specified PowerShell module from a given root folder path to the user's local PowerShell Modules directory and, if applicable, to the OneDrive Modules directory. After copying, it imports the module into the current PowerShell session.
+.PARAMETER RootFolderPath
+The root folder path where the module is located.
+.PARAMETER ModuleName
+The name of the module to be copied and imported.
+.FUNCTIONALITY 
+I got tired of manually copying my PowerShell modules to my local and OneDrive module directories every time I made changes. This script automates that process and ensures the module is imported into the current session.
+.ROLE
+IT Administrator, Powershell Developer
+.NOTES
+This script has been tested on Windows and Linux.
+#>
+
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory, 
+        HelpMessage = "Specify the root folder path where the module test folder is located.")]
+    $RootFolderPath,
+    [Parameter(Mandatory)]
+    $ModuleName
+)
+
+# Construct the full module path
+$ModulePath = Join-Path -Path $RootFolderPath -ChildPath $ModuleName
+
+if (-not (Test-Path $ModulePath)) {
+    Write-Error "$ModulePath does not exist. Please provide a valid path."
+    exit 1
+}
+
+# Script block to import the module after copying. So I don't have to repeat myself.
+$ImportResult = {
+    Import-Module -Name $ModuleName -Force -Verbose
+}
+
+if ($IsWindows -eq $true) {
+    #Paths where module files are stored
+    $LocalModulePath = "$env:USERPROFILE\Documents\PowerShell\Modules"
+    $OneDriveModulePath = "$env:OneDrive\Documents\PowerShell\Modules"
+    if (Test-Path $LocalModulePath) {
+        Robocopy $ModulePath $LocalModulePath\$ModuleName /E /MT:8 /XD $ModulePath\.git $ModulePath\.vscode 
+        & $ImportResult 
+    }
+    if (Test-Path $OneDriveModulePath) {
+        Robocopy $ModulePath $OneDriveModulePath\$ModuleName /E /MT:8 /XD $ModulePath\.git $ModulePath\.vscode 
+        & $ImportResult 
+    }
+}
+else {
+    #Paths where help files are stored in Linux or Mac.
+    $LocalModulePath = "/home/$env:USER/.local/share/powershell/Modules"
+    Copy-Item -Path $ModulePath -Destination $LocalModulePath/$ModuleName -Recurse -Force -Verbose 
+    
+    # Remove .git and .vscode folders if they exist in the destination path had to use Remove-Item instead of Robocopy to exclude the folders. Robocopy doesn't work on Linux or Mac.
+    Remove-Item -Path $LocalModulePath/$ModuleName/.git -Recurse -Force -Verbose
+    Remove-Item -Path $LocalModulePath/$ModuleName/.vscode -Recurse -Force -Verbose 
+    & $ImportResult 
+}
