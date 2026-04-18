@@ -1,21 +1,28 @@
 <#
 .SYNOPSIS 
 Simple script to find the file size of a directory.
-.NOTES
-One day add error checking for file path. 
 #>
 
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory)]
     $Path
 )
 
-$Byte_Size = Get-ChildItem -Recurse $path | Measure-Object -Sum Length | Select-Object sum -ExpandProperty sum  
+if (-not (Test-Path -Path $Path -PathType Container)) {
+    Write-Error "The specified path '$Path' does not exist or is not a directory."
+    $LASTEXITCODE = 1
+    Exit 
+}
+
+$ByteSize = (Get-ChildItem -Recurse $path | Measure-Object -Property Length -Sum).Sum
 
 #Math to find size since it only comes in bytes. 
-$Mg_Size = $Byte_Size / 1000
-$Gb_Size = $Byte_Size / 1000000
+$KbSize = $ByteSize / 1KB
+$MgSize = $ByteSize / 1MB
+$GbSize = $ByteSize / 1GB
 
-Write-Host "$Path has $Mg_Size MG"
-Write-Host "$Path has $Gb_Size GB"
+Write-Host "$Path has $ByteSize bytes of data"
+Write-Host "$Path has $KbSize Kb of data"
+Write-Host "$Path has $MgSize Mg of data"
+Write-Host "$Path has $GbSize Gb of data"
