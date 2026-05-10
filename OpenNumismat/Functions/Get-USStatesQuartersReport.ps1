@@ -1,15 +1,13 @@
 function Get-USStatesQuartersReport {
     <#
 .SYNOPSIS
-
+This function generates a report of US states quarters in the user's collection.
 .DESCRIPTION
-
+The Get-USStatesQuartersReport function reads a JSON file containing coin data and checks for the presence of quarters from each US state. It then generates a report indicating which states' quarters are in the user's collection and which are not.
 .COMPONENT
 OpenNumismat
-.PARAMETER Series
-
 .EXAMPLE
-
+Get-USStatesQuartersReport
 .NOTES
 Developer: ITNinja01
 Date: 05-09-2026
