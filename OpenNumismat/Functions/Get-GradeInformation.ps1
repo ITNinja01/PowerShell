@@ -13,8 +13,8 @@ Specifies the grade of the coin. Valid values are "01", "02", "03", "04", "06", 
 Get-GradeInformation -Grade "65"
 .NOTES
 Developer: ITNinja01
-Date: 10-28-2025   
-Version: 1.0.2
+Date: 05-09-2026   
+Version: 1.0.3
 #>
 
 [CmdletBinding()]
@@ -37,15 +37,15 @@ if (-not (Get-Module -ListAvailable -Name $moduleName)) {
 }
 Import-Module $moduleName
 
-$Grade_Data = ConvertFrom-Yaml (Get-Content -Path $PSScriptRoot\Coin_Grading_Standards.YAML -Raw)
+$GradeData = ConvertFrom-Yaml (Get-Content -Path $PSScriptRoot\Coin_Grading_Standards.YAML -Raw)
 
 if ($Grade -eq 'all') {
-    $Grade_Data | Where-Object {$_.Grade -like "*"} | select name, grade, Description 
+    $GradeData | Where-Object {$_.Grade -like "*"} | select name, grade, Description 
 }
 elseif ($Grade -eq 'info') {
-    $Grade_Data | Where-Object {$_.Link -like "htt*"}
+    $GradeData | Where-Object {$_.Link -like "htt*"}
 }     
 else {
-    $Grade_Data | Where-Object {$_.Grade -eq "$Grade"} 
+    $GradeData | Where-Object {$_.Grade -eq "$Grade"} 
 }
 }
