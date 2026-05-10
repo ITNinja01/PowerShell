@@ -12,8 +12,8 @@ Specifies the grade of the coin. Valid values are "01", "02", "03", "04", "06", 
 Get-GradeImageExample -Grade "65"
 .NOTES
 Developer: ITNinja01
-Date: 10-28-2025   
-Version: 1.0.2
+Date: 05-09-2026   
+Version: 1.0.3
 #>
 
     [CmdletBinding()]
@@ -23,10 +23,10 @@ Version: 1.0.2
         [ValidateSet("01", "02", "03", "04", "06", "08", "10", "12", "15", "20", "25", "30", "35", "40", "45", "50", "53", "55", "58", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "Ungradable")]
         $Grade
     )    
-    $Script_Location = $PSScriptRoot
-    $Bin_Location = Join-Path -Path $Script_Location -ChildPath "..\bin"
-    $Coin_Example = Join-Path -Path $Bin_Location -ChildPath "coin-grades-$grade.jpg"
+    $ScriptLocation = $PSScriptRoot
+    $BinLocation = Join-Path -Path $ScriptLocation -ChildPath "..\bin"
+    $CoinExample = Join-Path -Path $BinLocation -ChildPath "coin-grades-$grade.jpg"
 
-    $Coin_Example = Resolve-Path -Path $Coin_Example
-    Start-Process $Coin_Example
+    $CoinExample = Resolve-Path -Path $CoinExample
+    Start-Process $CoinExample
 }

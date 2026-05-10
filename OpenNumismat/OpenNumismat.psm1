@@ -20,3 +20,5 @@ Export-ModuleMember -Function Get-TitleSearch
 Export-ModuleMember -Function Get-GradeInformation
 . $PSScriptRoot\Functions\Get-GradeImageExample.ps1
 Export-ModuleMember -Function Get-GradeImageExample
+. $PSScriptRoot\Functions\Get-USStatesQuartersReport.ps1
+Export-ModuleMember -Function Get-USStatesQuartersReport

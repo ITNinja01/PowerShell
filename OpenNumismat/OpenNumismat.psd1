@@ -12,7 +12,7 @@
 RootModule = 'OpenNumismat.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.2.1'
+ModuleVersion = '1.3.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -27,7 +27,7 @@ Author = 'ITNinja01'
 CompanyName = 'ITNinja01'
 
 # Copyright statement for this module
-Copyright = '2025'
+Copyright = '2026'
 
 # Description of the functionality provided by this module
 Description = 'This module enables access to data from an Open Numismat-exported JSON file, allowing seamless integration of the database within PowerShell."'
@@ -71,7 +71,7 @@ PowerShellVersion = '5.1'
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Get-CountryByLetter', 'Get-CountryByName', 'Get-Grade', 'Get-Mint', 
                'Get-MintYear', 'Get-MintYearSearch', 'Get-ThreeRandomCoins', 
-               'Get-SeriesSearch', 'Get-TitleSearch', 'Get-GradeInformation', 'Get-GradeImageExample'
+               'Get-SeriesSearch', 'Get-TitleSearch', 'Get-GradeInformation', 'Get-GradeImageExample', 'Get-USStatesQuartersReport'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
