@@ -2,7 +2,7 @@
 .SYNOPSIS
 Creates a symbolic link, junction, or hard link to a folder.
 .DESCRIPTION
-This script uses the `mklink` command to create a symbolic link, junction, or hard link to a specified target directory. The type of link can be specified using the Type parameter.
+This script uses the mklink command to create a symbolic link, junction, or hard link to a specified target directory. The type of link can be specified using the Type parameter.
 .COMPONENT
 PowerShell, Windows, File System
 .FUNCTIONALITY
