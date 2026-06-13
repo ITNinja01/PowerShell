@@ -2,7 +2,7 @@
 .SYNOPSIS
 Creates a symbolic link, junction, or hard link to a folder.
 .DESCRIPTION
-This script uses the `mklink` command to create a symbolic link, junction, or hard link to a specified target directory. The type of link can be specified using the `-Type` parameter.
+This script uses the `mklink` command to create a symbolic link, junction, or hard link to a specified target directory. The type of link can be specified using the Type parameter.
 .COMPONENT
 PowerShell, Windows, File System
 .FUNCTIONALITY
@@ -17,11 +17,8 @@ The path to the target directory that the link will point to.
 .PARAMETER Type
 The type of link to create. Valid values are 'SymbolicLink', 'Junction', and 'HardLink'. The default is 'SymbolicLink'.
 .LINK
-Explains how to use `mklink` to create symbolic links, junctions, and hard links in Windows:
-https://winbuzzer.com/2024/01/31/how-to-onedrive-folder-sync-any-directory-via-mklink-xcxwbt/
-.NOTES
-Author: ITNinja01
-Date: 2024-06-01    
+Explains of how to use `mklink` to create symbolic links, junctions, and hard links in Windows:
+https://winbuzzer.com/2024/01/31/how-to-onedrive-folder-sync-any-directory-via-mklink-xcxwbt/  
 #>
 
 [CmdletBinding()]
@@ -32,8 +29,9 @@ param(
     [Parameter(Mandatory)]
     [string]$TargetPath,
 
-    [ValidateSet('SymbolicLink','Junction','HardLink')]
-    [string]$Type = 'SymbolicLink'
+    [Parameter(Mandatory)]
+    [ValidateSet('SymbolicLink', 'Junction', 'HardLink')]
+    [string]$Type
 )
 
 if (-not (Test-Path $TargetPath)) {
@@ -43,7 +41,7 @@ if (-not (Test-Path $TargetPath)) {
 
 if (Test-Path $LinkPath -ErrorAction SilentlyContinue) {
     New-Item -Path $LinkPath -ItemType Directory -Force
-    Write-Host "Removed existing link: $LinkPath"
+    Write-Host "Write-Host Created target directory: $LinkPath"
 }
 
 $HashLinkType = @{
@@ -52,4 +50,4 @@ $HashLinkType = @{
     'HardLink'     = 'H'
 }
 
-cmd.exe /c "mklink /$($HashLinkType[$Type]) `"$LinkPath`" `"$TargetPath`"" 
+cmd.exe /c "mklink /$($HashLinkType[$Type]) $LinkPath $TargetPath"
