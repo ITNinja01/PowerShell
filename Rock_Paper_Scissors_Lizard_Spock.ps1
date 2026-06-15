@@ -29,7 +29,7 @@ elseif ($UserInput -eq 'sp') {
     $UserChoice = 'spock'
 }
 else {
-    Write-Host 'Please only choose the for (R)ock, (P)aper or (S)cissors, (L)izard or (SP)ock.'
+    Write-Host 'Please only choose (R)ock, (P)aper or (S)cissors, (L)izard or (SP)ock.'
     #The next line is needed to restart the script if the user does not choose the correct letters for the game.
     & "$PSScriptRoot\Rock_Paper_Scissors_Lizard_Spock.ps1"
 }
