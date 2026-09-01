@@ -1,0 +1,64 @@
+{
+  "verso": "1.1",
+  "metadata": {
+    "defaultKernel": "csharp",
+    "activeLayout": {
+      "extensionId": "verso.layout.notebook",
+      "layoutId": "notebook"
+    }
+  },
+  "cells": [
+    {
+      "id": "15ce205e-897e-4937-aa86-7f44ce446059",
+      "type": "markdown",
+      "source": "# This is a place for common and useful commands that interact with a Git repository. I find example code very helpful, so I will be showing examples from my work. \n\n## Information from \u0022git help\u0022:\nusage: git [-v | --version] [-h | --help] [-C \u003Cpath\u003E] [-c \u003Cname\u003E=\u003Cvalue\u003E]\n           [--exec-path[=\u003Cpath\u003E]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=\u003Cpath\u003E]\n           [--work-tree=\u003Cpath\u003E] [--namespace=\u003Cname\u003E] [--config-env=\u003Cname\u003E=\u003Cenvvar\u003E]\n           \u003Ccommand\u003E [\u003Cargs\u003E]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n\u0027git help -a\u0027 and \u0027git help -g\u0027 list available subcommands and some\nconcept guides. See \u0027git help \u003Ccommand\u003E\u0027 or \u0027git help \u003Cconcept\u003E\u0027\nto read about a specific subcommand or concept.\nSee \u0027git help git\u0027 for an overview of the system."
+    },
+    {
+      "id": "5acdfbc9-a66b-4a8f-99bb-806aaca96f98",
+      "type": "markdown",
+      "source": "## What is the different between checking out and switching to a branch?\n\n**\u0060git checkout\u0060** and **\u0060git switch\u0060** can both be used to change branches, but there are differences:\n\n- \u0060git checkout\u0060 is an older, multi-purpose command. It can switch branches, restore files, or even create new branches. Its syntax can be confusing because it does many things.\n- \u0060git switch\u0060 is newer (added in Git 2.23) and is dedicated only to switching branches. It is simpler and less error-prone for branch operations.\n\n**Summary:**  \n- Use \u0060git switch \u003Cbranch\u003E\u0060 to change branches (recommended for clarity).\n- Use \u0060git checkout \u003Cbranch\u003E\u0060 for older workflows or when you need its extra features (like restoring files)."
+    },
+    {
+      "id": "0ee117bd-9881-4032-8123-bc62f5be5d26",
+      "type": "code",
+      "language": "powershell",
+      "source": "#This command will find the remote branches in a repository\ngit branch -r"
+    },
+    {
+      "id": "273658a0-9219-4cc5-a8e8-9de0fce74454",
+      "type": "code",
+      "language": "powershell",
+      "source": "#Workflow to create a new branch and send changes to remote repository\ngit checkout -b new-branch-name  # Create and switch to a new branch\ngit add .                          # Stage changes\ngit commit -m \u0022Your commit message\u0022 # Commit changes\ngit push -u origin new-branch-name # Push the new branch to remote and set upstream   "
+    },
+    {
+      "id": "b73e79f8-d1c0-46c9-8569-8b4af85c48b1",
+      "type": "code",
+      "language": "powershell",
+      "source": "#Seeing who worked on code using git blame\ngit blame file\n#q to exit"
+    },
+    {
+      "id": "c1ff0747-572b-4f31-85dd-00d3c9ec3693",
+      "type": "code",
+      "language": "powershell",
+      "source": "#Committing with a different user name and email\n git commit --author \u0022ITNinja01 \u003Cdwillson1@hotmail.com\u003E\u0022 -m  \u0022Message\u0022"
+    },
+    {
+      "id": "561f7618-3d9b-4193-9ae1-a5c678b3bc56",
+      "type": "code",
+      "language": "powershell",
+      "source": "#See who has done what in a repository\ngit shortlog -s -n"
+    },
+    {
+      "id": "290b2c08-0e87-44e6-84d2-e8321011bbfa",
+      "type": "code",
+      "language": "powershell",
+      "source": "# See large files in a respository\r\ngit log --all --stat -- \u0027*.zip\u0027 \u0027*.msi\u0027 \u0027*.exe\u0027 \u0027*.intunewin\u0027"
+    },
+    {
+      "id": "0e255c3d-fb5c-40ea-aa56-2702c360c893",
+      "type": "code",
+      "language": "powershell",
+      "source": "# How to restore a file\r\ngit restore (file path)"
+    }
+  ]
+}
