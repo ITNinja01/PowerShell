@@ -9,8 +9,8 @@ param ([Parameter(Mandatory = $true)]
     $Username,
     [switch] $unlock
 )
-$Lock_State = Get-ADUser $Username -Properties * | Select-Object lockedout -ExpandProperty lockedout
-If (-not $Lock_State) {
+$LockState = Get-ADUser $Username -Properties * | Select-Object lockedout -ExpandProperty lockedout
+If (-not $LockState) {
     Write-Error "$Username is not locked out." -ErrorAction Stop 
 }
 If ($unlock) {

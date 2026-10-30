@@ -60,13 +60,13 @@ $translations2 = Read-Host "Enter the second translation you want to use"
 #This is very important the ? and = are required for the URI to to formatted correctly for it to parse the query correctly.
 $middle = "?translation="
 
-$API_Call = "https://bible-api.com/$Verse$middle$translation1"
-$API_Call2 = "https://bible-api.com/$Verse$middle$translations2"
+$APICall = "https://bible-api.com/$Verse$middle$translation1"
+$APICall2 = "https://bible-api.com/$Verse$middle$translations2"
 
 
-$bible_request = Invoke-RestMethod -Uri $API_Call
-$bible_request2 = Invoke-RestMethod -Uri $API_Call2
+$BibleRequest = Invoke-RestMethod -Uri $APICall
+$BibleRequest2 = Invoke-RestMethod -Uri $APICall2
 
 # Display the requested verse in a formatted list
-$bible_request | Format-List reference, text, translation_name
-$bible_request2 | Format-List reference, text, translation_name
+$BibleRequest | Format-List reference, text, translation_name
+$BibleRequest2 | Format-List reference, text, translation_name

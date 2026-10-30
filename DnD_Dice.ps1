@@ -13,7 +13,7 @@ param (
 )
 
 #ASCII art of die faces from ChatGPT to use when the die is rolled. 
-$Die_Face_1 = @"
+$DieFace1 = @"
          _______
        /       /\ 
       /  x    /  \
@@ -22,7 +22,7 @@ $Die_Face_1 = @"
    /   1     \______\
   /___________\      
 "@  
-$Die_Face_2 = @"
+$DieFace2 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -31,7 +31,7 @@ $Die_Face_2 = @"
    /   2     \______\
   /___________\      
 "@  
-$Die_Face_3 = @"
+$DieFace3 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -40,7 +40,7 @@ $Die_Face_3 = @"
    /   3     \______\
   /___________\      
 "@  
-$Die_Face_4 = @"
+$DieFace4 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -49,7 +49,7 @@ $Die_Face_4 = @"
    /   4     \______\
   /___________\      
 "@  
-$Die_Face_5 = @"
+$DieFace5 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -58,7 +58,7 @@ $Die_Face_5 = @"
    /   5     \______\
   /___________\      
 "@  
-$Die_Face_6 = @"
+$DieFace6 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -67,7 +67,7 @@ $Die_Face_6 = @"
    /   6     \______\
   /___________\      
 "@  
-$Die_Face_7 = @"
+$DieFace7 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -76,7 +76,7 @@ $Die_Face_7 = @"
    /   7     \______\
   /___________\      
 "@  
-$Die_Face_8 = @"
+$DieFace8 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -85,7 +85,7 @@ $Die_Face_8 = @"
    /   8     \______\
   /___________\      
 "@ 
-$Die_Face_9 = @"
+$DieFace9 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -94,7 +94,7 @@ $Die_Face_9 = @"
    /   9     \______\
   /___________\      
 "@   
-$Die_Face_10 = @"
+$DieFace10 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -103,7 +103,7 @@ $Die_Face_10 = @"
    /   10    \______\
   /___________\      
 "@  
-$Die_Face_11 = @"
+$DieFace11 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -112,7 +112,7 @@ $Die_Face_11 = @"
    /  11     \______\
   /___________\      
 "@  
-$Die_Face_12 = @"
+$DieFace12 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -121,7 +121,7 @@ $Die_Face_12 = @"
    /   12    \______\
   /___________\      
 "@  
-$Die_Face_13 = @"
+$DieFace13 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -130,7 +130,7 @@ $Die_Face_13 = @"
    /  13     \______\
   /___________\      
 "@  
-$Die_Face_14 = @"
+$DieFace14 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -139,7 +139,7 @@ $Die_Face_14 = @"
    /  14     \______\
   /___________\      
 "@  
-$Die_Face_15 = @"
+$DieFace15 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -148,7 +148,7 @@ $Die_Face_15 = @"
    /  15     \______\
   /___________\      
 "@  
-$Die_Face_16 = @"
+$DieFace16 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -157,7 +157,7 @@ $Die_Face_16 = @"
    /  16     \______\
   /___________\      
 "@  
-$Die_Face_17 = @"
+$DieFace17 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -166,7 +166,7 @@ $Die_Face_17 = @"
    /  17     \______\
   /___________\      
 "@  
-$Die_Face_18 = @"
+$DieFace18 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -175,7 +175,7 @@ $Die_Face_18 = @"
    /   18    \______\
   /___________\      
 "@  
-$Die_Face_19 = @"
+$DieFace19 = @"
          _______
        /       /\ 
       /   x   /  \
@@ -184,7 +184,7 @@ $Die_Face_19 = @"
    /   19    \______\
   /___________\      
 "@  
-$Die_Face_20 = @"
+$DieFace20 = @"
                               ___====-_  _-====___
                            _--^^^#####//      \\#####^^^--_
                         _-^##########// ( 20!) \\##########^-_
@@ -218,30 +218,30 @@ $Die_Face_20 = @"
 
 #Hashtable used with the roll hit to match up the correct die face
 function Roll_Action_Function {
-  $Roll_Action = @{
-    1  = { Write-Host "$Die_Face_1" }
-    2  = { Write-Host "$Die_Face_2" }
-    3  = { Write-Host "$Die_Face_3" }
-    4  = { Write-Host "$Die_Face_4" }
-    5  = { Write-Host "$Die_Face_5" }
-    6  = { Write-Host "$Die_Face_6" }
-    7  = { Write-Host "$Die_Face_7" }
-    8  = { Write-Host "$Die_Face_8" }
-    9  = { Write-Host "$Die_Face_9" }
-    10 = { Write-Host "$Die_Face_10" }
-    11 = { Write-Host "$Die_Face_11" }
-    12 = { Write-Host "$Die_Face_12" }
-    13 = { Write-Host "$Die_Face_13" }
-    14 = { Write-Host "$Die_Face_14" }
-    15 = { Write-Host "$Die_Face_15" }
-    16 = { Write-Host "$Die_Face_16" }
-    17 = { Write-Host "$Die_Face_17" }
-    18 = { Write-Host "$Die_Face_18" }
-    19 = { Write-Host "$Die_Face_19" }
-    20 = { Write-Host "$Die_Face_20" }
+  $RollAction = @{
+    1  = { Write-Host "$DieFace1" }
+    2  = { Write-Host "$DieFace2" }
+    3  = { Write-Host "$DieFace3" }
+    4  = { Write-Host "$DieFace4" }
+    5  = { Write-Host "$DieFace5" }
+    6  = { Write-Host "$DieFace6" }
+    7  = { Write-Host "$DieFace7" }
+    8  = { Write-Host "$DieFace8" }
+    9  = { Write-Host "$DieFace9" }
+    10 = { Write-Host "$DieFace10" }
+    11 = { Write-Host "$DieFace11" }
+    12 = { Write-Host "$DieFace12" }
+    13 = { Write-Host "$DieFace13" }
+    14 = { Write-Host "$DieFace14" }
+    15 = { Write-Host "$DieFace15" }
+    16 = { Write-Host "$DieFace16" }
+    17 = { Write-Host "$DieFace17" }
+    18 = { Write-Host "$DieFace18" }
+    19 = { Write-Host "$DieFace19" }
+    20 = { Write-Host "$DieFace20" }
   }
-  if ($Roll_Action.ContainsKey($roll)) {
-    $Roll_Action[$roll].Invoke()
+  if ($RollAction.ContainsKey($roll)) {
+    $RollAction[$roll].Invoke()
   }
 }
 

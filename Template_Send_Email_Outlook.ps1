@@ -27,12 +27,12 @@ catch {
     Start-Process "C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE" -Wait
 }
 
-$My_Signature = @"
+$MySignature = @"
 "@
 
 $Body = @"
 
-$My_Signature
+$MySignature
 "@
 
 $outlookComObject = New-Object -ComObject Outlook.Application
@@ -41,7 +41,7 @@ $NewMail.Subject = ""
 $NewMail.Body = $Body
 $NewMail.To = "username@domain.com;username@domain.com"
 $NewMail.Cc = "username@domain.com;username@domain.com"
-$NewMail.Attachments.Add($Attached_File)
+$NewMail.Attachments.Add($AttachedFile)
 $NewMail.Send()
 
 Write-Host "Email has been sent!" -ForegroundColor DarkRed -BackgroundColor Green 

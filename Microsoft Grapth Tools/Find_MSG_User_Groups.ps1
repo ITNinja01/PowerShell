@@ -9,6 +9,6 @@ param (
     $Username
 )
 
-$MSG_User_ID = Get-MgUser -Filter "UserPrincipalName eq '$username@domain.com'" | Select-Object ID -ExpandProperty ID
+$MSGUserID = Get-MgUser -Filter "UserPrincipalName eq '$username@domain.com'" | Select-Object ID -ExpandProperty ID
 
-Get-MgUserMemberOf -UserId $MSG_User_ID | Select-Object Id -ExpandProperty Id | ForEach-Object { Get-MgGroup -GroupId $_ } | Select-Object DisplayName | Sort-Object DisplayName
+Get-MgUserMemberOf -UserId $MSGUserID | Select-Object Id -ExpandProperty Id | ForEach-Object { Get-MgGroup -GroupId $_ } | Select-Object DisplayName | Sort-Object DisplayName

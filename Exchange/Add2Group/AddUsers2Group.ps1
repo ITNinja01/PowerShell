@@ -2,8 +2,9 @@
 #Param for the group that mail contacts are being added to. 
 [CmdletBinding()]
 param (
+    [Alias('Group_Name')]
     [Parameter(Mandatory = $true)]
-    $Group_Name
+    $GroupName
 )
 #Using CSV to import users into new group 
-Import-Csv '$PSScripRroot\Group_Mems.csv' | ForEach-Object { Add-DistributionGroupMember -Identity $Group_Name -Member $_.Email_Address }
+Import-Csv '$PSScripRroot\Group_Mems.csv' | ForEach-Object { Add-DistributionGroupMember -Identity $GroupName -Member $_.Email_Address }

@@ -9,10 +9,10 @@ $Question = Read-Host "Ask the Magic 8 Ball a Question"
 #Getting answers from text file and taking a random answer from the list
 
 $Answers = Get-Content $PSScriptRoot\Magic_8_Ball_Ans.txt
-$The_Answer = Get-Random -InputObject $Answers
+$TheAnswer = Get-Random -InputObject $Answers
 
 #Carriage return
 $crlf = "`r`n"
 
 #Writes the answer to the screen
-Write-Host $crlf $The_Answer $crlf
+Write-Host $crlf $TheAnswer $crlf

@@ -4,8 +4,8 @@ This script will calculate your BMI using your height in inches and weight in po
 #>
 
 #Saving original host colors
-$Org_Foreground = (Get-Host).UI.RawUI.ForegroundColor
-$Org_Background = (Get-Host).UI.RawUI.BackgroundColor
+$OrgForeground = (Get-Host).UI.RawUI.ForegroundColor
+$OrgBackground = (Get-Host).UI.RawUI.BackgroundColor
 
 [Float]$Height = Read-Host -Prompt "Enter your height in inches."
 [Float]$Weight = Read-Host -Prompt "Enter your weight in pounds."
@@ -33,5 +33,5 @@ else {
 }
 
 #After changing foreground and background colors resetting back to the original host colors since PowerShell does not do this on its own.
-(Get-Host).UI.RawUI.ForegroundColor = $Org_Foreground
-(Get-Host).UI.RawUI.BackgroundColor = $Org_Background
+(Get-Host).UI.RawUI.ForegroundColor = $OrgForeground
+(Get-Host).UI.RawUI.BackgroundColor = $OrgBackground

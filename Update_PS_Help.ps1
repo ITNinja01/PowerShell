@@ -9,32 +9,32 @@ I decided on eight hours as the time frame to check for updated help files. This
 
 Update-help -UICulture ENG -Verbose
 
-$Write_Info = {
-    Write-Host "$HelpFile_Count help files updated successfully." -ForegroundColor Green
+$WriteInfo = {
+    Write-Host "$HelpFileCount help files updated successfully." -ForegroundColor Green
 }
 
 if ($IsWindows -eq $true) {
     #Paths where help files are stored
-    $Local_Help_Path = "$env:USERPROFILE\Documents\PowerShell\Help"
-    $OneDrive_Help_Path = "$env:OneDrive\Documents\PowerShell\Help"
+    $LocalHelpPath = "$env:USERPROFILE\Documents\PowerShell\Help"
+    $OneDriveHelpPath = "$env:OneDrive\Documents\PowerShell\Help"
 
-    if (Test-Path $Local_Help_Path) {
-        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }   
-        $HelpFile_Count = Get-ChildItem $Local_Help_Path -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
-        & $Write_Info
+    if (Test-Path $LocalHelpPath) {
+        Get-ChildItem $LocalHelpPath -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        $HelpFileCount = Get-ChildItem $LocalHelpPath -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
+        & $WriteInfo
     }
-    if (Test-Path $OneDrive_Help_Path) {
-        Get-ChildItem $OneDrive_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
-       $HelpFile_Count = Get-ChildItem $OneDrive_Help_Path -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
-        & $Write_Info
+    if (Test-Path $OneDriveHelpPath) {
+        Get-ChildItem $OneDriveHelpPath -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+       $HelpFileCount = Get-ChildItem $OneDriveHelpPath -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
+        & $WriteInfo
     }
 }
 else {
     #Paths where help files are stored in Linux or Mac.
-    $Local_Help_Path = "/home/$env:USER/.local/share/powershell/Help"
-    if (Test-Path $Local_Help_Path) {
-        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
-        $HelpFile_Count = Get-ChildItem $Local_Help_Path -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
-        & $Write_Info
+    $LocalHelpPath = "/home/$env:USER/.local/share/powershell/Help"
+    if (Test-Path $LocalHelpPath) {
+        Get-ChildItem $LocalHelpPath -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        $HelpFileCount = Get-ChildItem $LocalHelpPath -Recurse  -File | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) } | Measure-Object | Select-Object Count -ExpandProperty Count
+        & $WriteInfo
     }
 }
