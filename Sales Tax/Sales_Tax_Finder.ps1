@@ -13,9 +13,9 @@ https://taxfoundation.org/data/all/state/2024-sales-taxes/
 This script was inspired by a C program that I created in college to calculate sales tax on items in Michigan (found in the same folder).
 #>
 $response = Invoke-RestMethod -Uri "http://ipinfo.io/json"
-$Found_State = $response.region
+$FoundState = $response.region
 
-$States_Hashtable = @{
+$StatesHashtable = @{
     'Alabama'              = { Write-Host "Alabama's sales tax is 4%." }
     'Alaska'               = { Write-Host 'Alaska has no sales taxes (0%).' }
     'Arizona'              = { Write-Host "Arizona's sales tax is 5.60%." }
@@ -69,8 +69,8 @@ $States_Hashtable = @{
     'Wyoming'              = { Write-Host "Wyoming's sales tax is 4%." }
 }
 
-if ($States_Hashtable.ContainsKey($Found_State)) {
-    $States_Hashtable[$Found_State].Invoke()
+if ($StatesHashtable.ContainsKey($FoundState)) {
+    $StatesHashtable[$FoundState].Invoke()
 }
 else {
     Write-Host "You are not in the United States. No sales tax information available."

@@ -16,13 +16,13 @@ param (
 $crlf = "`r`n"
 
 #Stores variable for the Properties of org. info
-$info_org = Get-ADUser $Username -Properties Info | Select-Object -ExpandProperty Info
+$InfoOrg = Get-ADUser $Username -Properties Info | Select-Object -ExpandProperty Info
 
 #Creates the dates
-$info_mod = "{0:MM/dd/yyyy} Account Modified" -f (Get-Date)
+$InfoMod = "{0:MM/dd/yyyy} Account Modified" -f (Get-Date)
 
 #Adds all of the changes together
-$info_new = $Comment + $crlf + $info_mod + $crlf + $info_org
+$InfoNew = $Comment + $crlf + $InfoMod + $crlf + $InfoOrg
 
-#Sets info with $info_new
-Set-ADUser $Username -Replace @{Info = $info_new } -Verbose  -PassThru | Select-Object DistinguishedName, SID
+#Sets info with $InfoNew
+Set-ADUser $Username -Replace @{Info = $InfoNew } -Verbose  -PassThru | Select-Object DistinguishedName, SID

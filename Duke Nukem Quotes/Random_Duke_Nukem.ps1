@@ -27,14 +27,14 @@ if (-not (Get-Module -ListAvailable -Name $moduleName)) {
 Import-Module $moduleName
 
 $Quotes = ConvertFrom-Yaml (get-content "$PSScriptRoot\Quotes.yaml" -Raw)
-$The_Quote = Get-Random -InputObject $Quotes
+$TheQuote = Get-Random -InputObject $Quotes
 
 if ($IsWindows -eq $true ) {
     $SpeechSynth = New-Object System.Speech.Synthesis.SpeechSynthesizer
-    $SpeechSynth.Speak($The_Quote)
+    $SpeechSynth.Speak($TheQuote)
 } 
 else {
     # Carriage return
     $crlf = "`r`n"
-    Write-Host $crlf $The_Quote $crlf
+    Write-Host $crlf $TheQuote $crlf
 }

@@ -17,8 +17,8 @@ $translation = 'bbe'
 #This is very important the ? and = are required for the URI to to formatted correctly for it to parse the query correctly.
 $middle = "?translation="
 
-$API_Call = "https://bible-api.com/$Verse$middle$translation"
-$bible_request = Invoke-RestMethod -Uri $API_Call
+$APICall = "https://bible-api.com/$Verse$middle$translation"
+$BibleRequest = Invoke-RestMethod -Uri $APICall
 
 # Display the requested verse in a formatted list
-$bible_request | Format-List reference, text, translation_name
+$BibleRequest | Format-List reference, text, translation_name

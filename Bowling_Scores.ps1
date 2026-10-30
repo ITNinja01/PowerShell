@@ -9,22 +9,22 @@
     The script outputs the total and average scores to the console.
     #>
 # Enter bowling scores for three games.
-[int]$Game_Score1 = Read-Host "Enter total pins from game 1"
-[int]$Game_Score2 = Read-Host "Enter total pins from game 2"
-[int]$Game_Score3 = Read-Host "Enter total pins from game 3"
+[int]$GameScore1 = Read-Host "Enter total pins from game 1"
+[int]$GameScore2 = Read-Host "Enter total pins from game 2"
+[int]$GameScore3 = Read-Host "Enter total pins from game 3"
 
 Clear-Host
 
 #Learned that Write-Host can output multiple lines with a single command using a double-quoted string and line breaks.
 Write-Host "Bowling Scores
-Game 1: $Game_Score1
-Game 2: $Game_Score2
-Game 3: $Game_Score3"
+Game 1: $GameScore1
+Game 2: $GameScore2
+Game 3: $GameScore3"
 
 #Calculate total and average scores
-[int]$Total_Score = $Game_Score1 + $Game_Score2 + $Game_Score3
-$Average_Score = [Math]::Round(($Total_Score / 3), 0)
+[int]$TotalScore = $GameScore1 + $GameScore2 + $GameScore3
+$AverageScore = [Math]::Round(($TotalScore / 3), 0)
 
 #Output the total and average scores
-Write-Host "Your total score for the three games is: $Total_Score"
-Write-Host "Your average score per game is: $Average_Score"
+Write-Host "Your total score for the three games is: $TotalScore"
+Write-Host "Your average score per game is: $AverageScore"

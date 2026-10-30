@@ -13,9 +13,9 @@ param( 
 )
 
 #If to look for AD account in domain
-$Test_Username = Get-ADUser -Filter { samaccountname -eq $Username } | Select-Object samaccountname -ExpandProperty samaccountname
-if ($Test_Username -eq $null) {
-    throw "There is no AD account for $Username"
+$TestUserName = Get-ADUser -Filter { samaccountname -eq $UserName } | Select-Object samaccountname -ExpandProperty samaccountname
+if ($TestUserName -eq $null) {
+    throw "There is no AD account for $UserName"
 }
 
 Get-ADUser $UserName -Properties * | Select-Object name, Enabled, AccountExpirationDate, last*, lockedout, pass*

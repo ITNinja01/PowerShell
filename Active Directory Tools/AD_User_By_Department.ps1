@@ -23,8 +23,8 @@ param(
 Import-Module ActiveDirectory
 
 #Checks if the department parameter is a department in Active Directory.
-$Deparament_Check = Get-ADUser -Filter 'department -eq $department' -Properties department 
-if ($null -eq $Deparament_Check) {
+$DeparamentCheck = Get-ADUser -Filter 'department -eq $department' -Properties department
+if ($null -eq $DeparamentCheck) {
     Write-Host "No users found in the specified department: $Department" -ForegroundColor Red
     exit 1
 }

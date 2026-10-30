@@ -15,7 +15,7 @@ This script is intended for use by system administrators and advanced users who 
 It assumes the user has administrative privileges.
 #>
 
-$Tron_Art = @"
+$TronArt = @"
 ........'''''.      ..'',,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;,..                ..';:cc::;,..           .;;;;,                   .''''''.'
 ,:'........,dc    ,loc;;;,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;cod1'           'codlc:,,,,;:loxxc'      ..xx;;;dd.                 cx,....,o'
 ,c.        .x:  ,ol'...                                      .,oo'      .:ol,.           ..':xkl.   ..kk. ..ckl.               cO.    'o'
@@ -40,7 +40,7 @@ Tron fights for the users!
 This script is designed to speed up and protect your computer; this script assumes you are running it with administrative privileges. If not, please run PowerShell as an administrator.
 "@
 
-Write-Host $Tron_Art
+Write-Host $TronArt
 Write-Host $Intro
 
 Write-Host "Deleting temporary files..."
@@ -61,30 +61,30 @@ Read-Host "Do you want to clear the recycle bin? (Y/N)
 Write-Host "Updating PowerShell Help..."
 Update-help -UICulture ENG -Verbose -Force
 
-$Write_Info = {
+$WriteInfo = {
     Write-Host "These help files updated successfully." -ForegroundColor Green
 }
 
 if ($IsWindows -eq $true) {
     #Paths where help files are stored
-    $Local_Help_Path = "$env:USERPROFILE\Documents\PowerShell\Help"
-    $OneDrive_Help_Path = "$env:OneDrive\Documents\PowerShell\Help"
+    $LocalHelpPath = "$env:USERPROFILE\Documents\PowerShell\Help"
+    $OneDriveHelpPath = "$env:OneDrive\Documents\PowerShell\Help"
 
-    if (Test-Path $Local_Help_Path) {
-        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
-        & $Write_Info
+    if (Test-Path $LocalHelpPath) {
+        Get-ChildItem $LocalHelpPath -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        & $WriteInfo
     }
-    if (Test-Path $OneDrive_Help_Path) {
-        Get-ChildItem $OneDrive_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
-        & $Write_Info
+    if (Test-Path $OneDriveHelpPath) {
+        Get-ChildItem $OneDriveHelpPath -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        & $WriteInfo
     }
 }
 else {
     #Paths where help files are stored in Linux or Mac.
-    $Local_Help_Path = "/home/$env:USER/.local/share/powershell/Help"
-    if (Test-Path $Local_Help_Path) {
-        Get-ChildItem $Local_Help_Path -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
-        & $Write_Info
+    $LocalHelpPath = "/home/$env:USER/.local/share/powershell/Help"
+    if (Test-Path $LocalHelpPath) {
+        Get-ChildItem $LocalHelpPath -Recurse | Where-Object { $_.LastWriteTime -ge ((get-date).AddHours(-8)) }
+        & $WriteInfo
     }
 }
 
@@ -106,5 +106,5 @@ dism /Online /Cleanup-Image /RestoreHealth
 Write-Host "Defragmenting hard drive..."
 Start-Process -FilePath "defrag.exe" -ArgumentList "/C /O /H /V" -Wait -NoNewWindow
 
-write-host $Tron_Art
+write-host $TronArt
 Write-Host "TRON has completed its mission. Goodbye, user!"

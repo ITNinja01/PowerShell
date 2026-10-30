@@ -2,11 +2,13 @@
 #Perams
 [CmdletBinding()]
 param (
+    [Alias('DistinguishedName_Mailbox')]
     [Parameter(Mandatory = $true)]
-    $DistinguishedName_Mailbox,
+    $DistinguishedNameMailbox,
+    [Alias('Username_Requesting')]
     [Parameter(Mandatory = $true)]
-    $Username_Requesting
+    $UsernameRequesting
 )
  
 #Giving user access to another user's mailbox
-Add-MailboxPermission -Identity $DistinguishedName_Mailbox -User "DomainName\$Username_Requesting" -AccessRights 'FullAccess'
+Add-MailboxPermission -Identity $DistinguishedNameMailbox -User "DomainName\$UsernameRequesting" -AccessRights 'FullAccess'
