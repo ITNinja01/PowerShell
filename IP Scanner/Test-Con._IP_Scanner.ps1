@@ -2,21 +2,28 @@
 .SYNOPSIS
 This script scans a list of IP addresses from a CSV file and checks their connectivity using the Test-Connection cmdlet.
 .DESCRIPTION
-The script reads IP addresses from a CSV file located in the script's root directory, attempts to ping each address, and logs the results (online/offline status) to an output CSV file in the user's Downloads folder.
+The script reads IP addresses from a CSV file located in the user's Downloads folder, attempts to ping each address, and logs the results (online/offline status) to an output CSV file in the user's Downloads folder.
+
+A example of the input CSV file (IPs.csv) format is in $PSScriptRoot folder. 
+.FUNCTIONALITY
+Network connectivity testing
 .COMPONENT
 PowerShell, Networking
 .INPUTS
-A CSV file named IPs.csv located in the script's root directory containing a column "IPAddress".
+A CSV file named IPs.csv located in the user's Downloads folder containing a column "IPAddress".
 .OUTPUTS
 A CSV file named IP_Scan_Results.csv in the user's Downloads folder containing the IP address.
-.FUNCTIONALITY
-Network connectivity testing
+.NOTES
+Developer: ITNina01
+Date: 11-03-2026
+Version: 2.1.0
 #>
 
-$IPAddresses = Import-Csv $PSScriptRoot\IPs.csv
+$IPAddresses = Import-Csv $env:USERPROFILE\Downloads\IPs.csv
 
 $Count = $IPAddresses.Count
 Write-Host "Scanning $Count IP addresses from the input file."
+$i = 0
 
 $IPAddresses | ForEach-Object {
     $i++
