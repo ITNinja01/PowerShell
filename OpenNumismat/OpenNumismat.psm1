@@ -22,3 +22,9 @@ Export-ModuleMember -Function Get-GradeInformation
 Export-ModuleMember -Function Get-GradeImageExample
 . $PSScriptRoot\Functions\Get-USStatesQuartersReport.ps1
 Export-ModuleMember -Function Get-USStatesQuartersReport
+. $PSScriptRoot\Functions\Get-USAmericanWomenQuartersReport.ps1
+Export-ModuleMember -Function Get-USAmericanWomenQuartersReport
+. $PSScriptRoot\Functions\Get-USSemiquincentennialQuartersReport.ps1
+Export-ModuleMember -Function Get-USSemiquincentennialQuartersReport
+. $PSScriptRoot\Functions\Get-USAmericaBeautifulQuartersReport.ps1
+Export-ModuleMember -Function Get-USAmericaBeautifulQuartersReport

@@ -10,7 +10,7 @@ OpenNumismat
 Get-USAmericaBeautifulQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-09-2026
+Date: 11-11-2026
 Version: 1.0.0
 #>
    
@@ -102,6 +102,7 @@ Version: 1.0.0
             }
         }
     } 
+
     Write-Host "Total America the Beautiful Quarters I have: $Y"
     Write-Host "Total America the Beautiful Quarters I do not have: $N"
     Return $ReportData | sort-object HasQuarter -Descending
