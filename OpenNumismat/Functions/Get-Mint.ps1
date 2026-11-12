@@ -12,7 +12,7 @@ The mint of the coin to search for. The function will return coins that match th
 Get-MintSearch -Search "San Francisco"
 .NOTES
 Developer: ITNinja01
-Date: 11-11-2026
+Date: 11-12-2026
 Version: 2.1.0
 #>
 
@@ -24,9 +24,7 @@ param(
     $Search
 )
 
-    if ($global:JsonCoins -eq $null) {
-        $global:JsonCoins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-    }
+    test-JSONConnection
 
     if (Test-Path $global:JsonCoins) {
         $Coins = Get-Content -Path  $JsonCoins -raw | ConvertFrom-Json

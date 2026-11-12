@@ -10,13 +10,11 @@ OpenNumismat
 Get-USSemiquincentennialQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-11-2026
-Version: 1.0.1
+Date: 11-12-2026
+Version: 1.0.0
 #>
    
-    if ($global:JsonCoins -eq $null) {
-        $global:JsonCoins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-    }
+    Test-JSONConnection
 
     $USQuarters = 'Mayflower Compact',
     'American Revolutionary War',

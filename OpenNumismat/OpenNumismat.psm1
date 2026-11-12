@@ -28,3 +28,5 @@ Export-ModuleMember -Function Get-USAmericanWomenQuartersReport
 Export-ModuleMember -Function Get-USSemiquincentennialQuartersReport
 . $PSScriptRoot\Functions\Get-USAmericaBeautifulQuartersReport.ps1
 Export-ModuleMember -Function Get-USAmericaBeautifulQuartersReport
+. $PSScriptRoot\Functions\Test-JSONConnection.ps1
+Test-JSONConnection

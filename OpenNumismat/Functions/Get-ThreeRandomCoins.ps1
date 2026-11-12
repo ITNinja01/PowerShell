@@ -11,13 +11,11 @@ OpenNumismat
 Get-ThreeRandomCoins
  .NOTES
 Developer: ITNinja01
-Date: 05-09-2026   
-Version: 1.0.4
+Date: 11-12-2026   
+Version: 1.1.0
 #>
 
-    if ($global:JsonCoins -eq $null) {
-        $global:JsonCoins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-    }
+    Test-JSONConnection
 
     if (Test-Path $global:JsonCoins) {
         $Coins = Get-Content -Path  $JsonCoins -raw | ConvertFrom-Json

@@ -9,20 +9,25 @@ OpenNumismat
 .PARAMETER Series
 The series or part of the series of the coin to search for. The function will return coins that match the series pattern.
 .EXAMPLE
-Get-SeriesSearch
+Get-SeriesSearch -SeriesSearch "America the Beautiful"
 .NOTES
 Developer: ITNinja01
-Date: 05-09-2026
-Version: 1.0.4
+Date: 11-12-2026
+Version: 1.1.0
 #>
-    $Series = Read-Host -Prompt "Type in the series or part of the series to search for?"
 
-    if ($global:JsonCoins -eq $null) {
-        $global:JsonCoins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-    }
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory)]
+    [string]
+    [validateNotNullOrEmpty()]
+    $SeriesSearch 
+)
+
+    Test-JSONConnection
 
     if (Test-Path $global:JsonCoins) {
         $Coins = Get-Content -Path  $JsonCoins -raw | ConvertFrom-Json
-        $Coins.coins | select-object country, title, series, year, grade | Where-Object { $_.Series -like "*$Series*" }
+        $Coins.coins | select-object country, title, series, year, grade | Where-Object { $_.Series -like "*$SeriesSearch*" }
     }
 }  
