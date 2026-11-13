@@ -6,13 +6,13 @@ This function retrieves coins from a JSON file based on the coin's mint.
 The Get-MintSearch function reads a JSON file containing coin data and filters the coins based on the specified mint.
 .COMPONENT
 OpenNumismat
-.PARAMETER Mint
+.PARAMETER Search
 The mint of the coin to search for. The function will return coins that match this mint.
 .EXAMPLE
 Get-MintSearch -Search "San Francisco"
 .NOTES
 Developer: ITNinja01
-Date: 11-12-2026
+Date: 11-13-2026
 Version: 2.1.0
 #>
 

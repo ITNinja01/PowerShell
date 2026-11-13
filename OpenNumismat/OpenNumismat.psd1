@@ -72,7 +72,7 @@ PowerShellVersion = '5.1'
 FunctionsToExport = 'Get-CountryByLetter',
  'Get-CountryByName', 
  'Get-Grade', 
- 'Get-Mint', 
+ 'Get-MintSearch', 
  'Get-MintYear', 
  'Get-MintYearSearch', 
  'Get-ThreeRandomCoins',     
