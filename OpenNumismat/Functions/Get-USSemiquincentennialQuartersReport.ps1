@@ -10,17 +10,17 @@ OpenNumismat
 Get-USSemiquincentennialQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-12-2026
-Version: 1.0.0
+Date: 11-14-2026
+Version: 1.0.1
 #>
    
     Test-JSONConnection
 
-    $USQuarters = 'Mayflower Compact',
-    'American Revolutionary War',
-    'United States Declaration of Independence',
+    $USQuarters = 'American Revolutionary War',
     'Constitution of the United States',
-    'Gettysburg Address'
+    'Gettysburg Address',
+    'Mayflower Compact',
+    'United States Declaration of Independence'
 
     $ReportData = [System.Collections.Generic.List[Object]]::new()
 

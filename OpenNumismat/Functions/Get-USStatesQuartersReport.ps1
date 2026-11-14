@@ -16,10 +16,6 @@ Version: 1.1.0
    
     Test-JSONConnection
 
-    if ($global:JsonCoins -eq $null) {
-        $global:JsonCoins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-    }
-
     $USStates = "Alabama",
     "Alaska",
     "Arizona",

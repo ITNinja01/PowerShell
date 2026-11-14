@@ -10,32 +10,32 @@ OpenNumismat
 Get-USAmericanWomenQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-12-2026
-Version: 1.0.0
+Date: 11-14-2026
+Version: 1.0.1
 #>
 
 Test-JSONConnection
 
-    $USQuarters = 'Maya Angelou',
-    'Dr. Sally Ride',
-    'Wilma Mankiller',
-    'Nina Otero-Warren',
+    $USQuarters = 'Althea Gibson',
     'Anna May Wong',
     'Bessie Coleman',
+    'Celia Cruz',
+    'Dr. Mary Edwards Walker',
+    'Dr. Pauli Murray',
+    'Dr. Sally Ride',
+    'Dr. Vera Rubin	',
     'Edith Kanakaʻole',
     'Eleanor Roosevelt',
-    'Jovita Idar',
-    'Maria Tallchief',
-    'Dr. Pauli Murray',
-    'Patsy Mink',
-    'Dr. Mary Edwards Walker',
-    'Celia Cruz',
-    'Zitkala-Sa',
     'Ida B. Wells',
+    'Jovita Idar',
     'Juliette Gordon Low',
-    'Dr. Vera Rubin	',
-    'Stacey Milbern'
-    'Althea Gibson'
+    'Maria Tallchief',
+    'Maya Angelou',
+    'Nina Otero-Warren',
+    'Patsy Mink',
+    'Stacey Milbern',
+    'Wilma Mankiller',
+    'Zitkala-Sa'
 
     $ReportData = [System.Collections.Generic.List[Object]]::new()
 
