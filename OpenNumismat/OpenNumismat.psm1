@@ -32,3 +32,5 @@ Export-ModuleMember -Function Get-USAmericaBeautifulQuartersReport
 Export-ModuleMember -Function Get-MetalPriceSpot
 . $PSScriptRoot\Functions\Test-JSONConnection.ps1
 Export-ModuleMember -Function Test-JSONConnection
+. $PSScriptRoot\Functions\Get-USDCAndTerritoriesQuartersReport.ps1
+Export-ModuleMember -Function Get-USDCAndTerritoriesQuartersReport
