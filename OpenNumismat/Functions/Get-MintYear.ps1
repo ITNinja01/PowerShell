@@ -12,8 +12,8 @@ If set to true, the results will be sorted in descending order by year.
 Get-MintYear
 .NOTES
 Developer: ITNinja01
-Date: 05-09-2026   
-Version: 1.0.3
+Date: 11-12-2026   
+Version: 1.1.0
 #>
 
     param (
@@ -22,9 +22,7 @@ Version: 1.0.3
         $Descending = $false
     )
 
-    if ($global:JsonCoins -eq $null) {
-        $global:JsonCoins = Read-Host -Prompt "Type in the file path for the Open Numismat exported .JSON file?"
-    }
+    Test-JSONConnection
 
     if (Test-Path $global:JsonCoins) {
         $Coins = Get-Content -Path  $JsonCoins -raw | ConvertFrom-Json

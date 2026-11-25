@@ -12,7 +12,7 @@
 RootModule = 'OpenNumismat.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.3.0'
+ModuleVersion = '1.4.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -69,9 +69,24 @@ PowerShellVersion = '5.1'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-CountryByLetter', 'Get-CountryByName', 'Get-Grade', 'Get-Mint', 
-               'Get-MintYear', 'Get-MintYearSearch', 'Get-ThreeRandomCoins', 
-               'Get-SeriesSearch', 'Get-TitleSearch', 'Get-GradeInformation', 'Get-GradeImageExample', 'Get-USStatesQuartersReport'
+FunctionsToExport = 'Get-CountryByLetter',
+ 'Get-CountryByName', 
+ 'Get-Grade', 
+ 'Get-MintSearch', 
+ 'Get-MintYear', 
+ 'Get-MintYearSearch', 
+ 'Get-ThreeRandomCoins',     
+ 'Get-SeriesSearch',
+'Get-TitleSearch', 
+'Get-GradeInformation', 
+'Get-GradeImageExample', 
+'Get-USStatesQuartersReport',
+'Get-USAmericanWomenQuartersReport',
+'Get-USSemiquincentennialQuartersReport',
+'Get-USAmericaBeautifulQuartersReport',
+'Get-MetalPriceSpot',
+'Test-JSONConnection',
+'Get-USDCAndTerritoriesQuartersReport'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
