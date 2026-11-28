@@ -10,8 +10,8 @@ OpenNumismat
 Get-USDCAndTerritoriesQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-19-2026
-Version: 1.0.0
+Date: 11-28-2026
+Version: 1.1.0
 #>
    
     Test-JSONConnection
@@ -53,5 +53,5 @@ Version: 1.0.0
 
     Write-Host "Total DC and U.S. Territories Quarters I have: $Y"
     Write-Host "Total DC and U.S. Territories Quarters I do not have: $N"
-    Return $ReportData | sort-object HasQuarter -Descending
+    Return $ReportData | Sort-Object -Property @{ Expression = 'HasQuarter'; Descending = $true }, Coinage
 } 

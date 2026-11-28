@@ -10,7 +10,7 @@ OpenNumismat
 Get-USStatesQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-12-2026
+Date: 11-28-2026
 Version: 1.1.0
 #>
    
@@ -95,5 +95,5 @@ Version: 1.1.0
     } 
     Write-Host "Total States with Quarters I have: $Y"
     Write-Host "Total States with Quarters I do not have: $N"
-    Return $ReportData | sort-object HasQuarter -Descending
+    Return $ReportData | Sort-Object -Property @{ Expression = 'HasQuarter'; Descending = $true }, State
 } 
