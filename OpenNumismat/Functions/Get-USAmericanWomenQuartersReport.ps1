@@ -10,8 +10,8 @@ OpenNumismat
 Get-USAmericanWomenQuartersReport
 .NOTES
 Developer: ITNinja01
-Date: 11-14-2026
-Version: 1.0.1
+Date: 11-28-2026
+Version: 1.1.0
 #>
 
 Test-JSONConnection
@@ -23,7 +23,7 @@ Test-JSONConnection
     'Dr. Mary Edwards Walker',
     'Dr. Pauli Murray',
     'Dr. Sally Ride',
-    'Dr. Vera Rubin	',
+    'Dr. Vera Rubin',
     'Edith Kanakaʻole',
     'Eleanor Roosevelt',
     'Ida B. Wells',
@@ -66,5 +66,5 @@ Test-JSONConnection
     
     Write-Host "Total American Women Quarters I have: $Y"
     Write-Host "Total American Women Quarters I do not have: $N"
-    Return $ReportData | sort-object HasQuarter -Descending
+    Return $ReportData | Sort-Object -Property @{ Expression = 'HasQuarter'; Descending = $true }, Coinage
 } 
